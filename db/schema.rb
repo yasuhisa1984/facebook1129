@@ -11,10 +11,66 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170301084924) do
+ActiveRecord::Schema.define(version: 20170322021436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "zipcode"
+    t.string   "phone"
+    t.string   "state_name"
+    t.string   "alternative_phone"
+    t.string   "company"
+    t.integer  "state_id"
+    t.integer  "country_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cart_items", force: :cascade do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "product_id", null: false
+    t.integer  "quantity",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "topic_id"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["topic_id"], name: "index_comments_on_topic_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
+
+  create_table "order_items", force: :cascade do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "product_id", null: false
+    t.integer  "order_id",   null: false
+    t.integer  "price",      null: false
+    t.integer  "quantity",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string   "title",          limit: 20, null: false
+    t.text     "description",               null: false
+    t.string   "image_url",                 null: false
+    t.integer  "price",                     null: false
+    t.integer  "stock_quantity",            null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
   create_table "pictures", force: :cascade do |t|
     t.string   "title"
@@ -23,6 +79,23 @@ ActiveRecord::Schema.define(version: 20170301084924) do
     t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.text     "picture"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "title",          limit: 20, null: false
+    t.text     "description",               null: false
+    t.string   "image_url",                 null: false
+    t.integer  "price",                     null: false
+    t.integer  "stock_quantity",            null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -55,4 +128,6 @@ ActiveRecord::Schema.define(version: 20170301084924) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true, using: :btree
 
+  add_foreign_key "comments", "topics"
+  add_foreign_key "comments", "users"
 end

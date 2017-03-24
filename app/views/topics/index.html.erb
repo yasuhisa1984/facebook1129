@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <section class="main-header">
+            <p class="flash"><%= notice %><%= alert %></p>
+        </section>
+        <div class="col-md-3">
+            <p class="text-center">メニュー表</p>
+        </div>
+        <div class="col-md-7">
+          <%= link_to new_topic_path, remote: true do %>
+            <%= form_for(@topic, data: { remote: true }) do |f| %>
+            <%= f.label :投稿を作成 %>
+            <%= f.text_field :content, class: 'form-control', :placeholder => "いまなにしてる？",:onclick => "this.select()"  %>
+          <br>
+            <% end %>
+          <% end %>
+          <div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+          <div class="product-index"><%= render "index2" %></div>
+        </div>
+        <div class="col-md-2">
+            <p class="text-center">友達リスト</p>
+              <ul>
+                <% @users.each do |user| %>
+                <li><%= user.name %></li>
+                <% end %>
+              </ul>
+        </div>
+    </div>
+</div>

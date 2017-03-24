@@ -1,0 +1,14 @@
+<ul>
+  <% comments.each do |comment| %>
+    <% unless comment.id.nil? %>
+      <li>
+        <% if current_user.id == comment.user.id %>
+          <p class="right">
+            <%= link_to '', edit_topic_comment_(topic, comment), class: "fa fa-pencil-square-o fa-lg"  %>
+
+          </p>
+        <% end %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

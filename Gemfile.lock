@@ -42,6 +42,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
+    annotate_models (0.1.1)
     arel (6.0.4)
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
@@ -86,6 +87,10 @@ GEM
     haml (4.0.7)
       tilt
     hashie (3.5.1)
+    hirb (0.7.3)
+    hirb-unicode (0.0.5)
+      hirb (~> 0.5)
+      unicode-display_width (~> 0.1.1)
     i18n (0.8.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -248,6 +253,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
+    unicode-display_width (0.1.1)
     warden (1.2.6)
       rack (>= 1.0)
     web-console (2.3.0)
@@ -261,6 +267,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeresource
+  annotate_models
   byebug
   cancan
   carrierwave
@@ -268,6 +275,8 @@ DEPENDENCIES
   devise
   dotenv-rails
   faker
+  hirb
+  hirb-unicode
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
@@ -289,4 +298,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.14.3
+   1.14.6

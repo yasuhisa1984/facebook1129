@@ -1,0 +1,18 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <%= form_for(@topic, remote: true) do |f| %>
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">投稿を作成</h4>
+        </div>
+        <div class="modal-body">
+            <%= f.label :コメント %>
+            <%= f.text_area  :content, rows: 10, class: 'form-control', :placeholder => "いまなにしてる？"  %>
+            <br>
+            <%= f.submit '投稿する', class: 'btn btn-primary btn-block' %>
+        </div>
+    </div>
+    <% end %>
+</div>
