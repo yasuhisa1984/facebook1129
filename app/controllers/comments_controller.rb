@@ -1,4 +1,6 @@
+
 class TopicsController < ApplicationController
+end
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:edit, :destroy]
   def index
@@ -9,21 +11,16 @@ class CommentsController < ApplicationController
     # ログインユーザーに紐付けてインスタンス生成するためbuildメソッドを使用します。
     @comment = current_user.comments.build(comment_params)
     @topic = @comment.topic
-
+    @topics = Topic.all
+    @topic.save
     # クライアント要求に応じてフォーマットを変更
-    respond_to do |format|
-      if @comment.save
-        format.html { redirect_to topic_path(@topic), notice: 'コメントを投稿しました。' }
-      else
-        format.html { render :new }
-      end
-    end
+
   end
 
 
   def edit
-    @topic_f = Topic.find(1)
-    @comment = @topic_f.comments.build
+    @topic_f = Topic.find(params[:topic_id])
+    @comment = Comment.find(params[:id])
   end
 
   def destroy
@@ -31,6 +28,13 @@ class CommentsController < ApplicationController
     @topics = Topic.all
   end
 
+  def update
+
+    @topic_f = Topic.find(params[:topic_id])
+    @comment = Comment.find(params[:id])
+    @comment.update(comment_params)
+    @topics = Topic.all
+  end
 
   private
     # ストロングパラメーター

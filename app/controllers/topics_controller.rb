@@ -38,18 +38,6 @@ class TopicsController < ApplicationController
     @topics = Topic.all
     @topic.save
 
-    # ログインユーザーに紐付けてインスタンス生成するためbuildメソッドを使用します。
-    @comment = current_user.comments.build(comment_params)
-
-
-    # クライアント要求に応じてフォーマットを変更
-    respond_to do |format|
-      if @comment.save
-        format.html { redirect_to topic_path(@topic), notice: 'コメントを投稿しました。' }
-      else
-        format.html { render :new }
-      end
-    end
   end
 
   def edit
