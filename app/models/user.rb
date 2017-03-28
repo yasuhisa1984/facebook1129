@@ -6,6 +6,16 @@ class User < ActiveRecord::Base
   has_many :topics, dependent: :destroy
   has_many :comments, dependent: :destroy
 
+
+  #同じモデルなので別の名前で定義
+  #class_name: 'Relationship'。reverse_relationshipsテーブルが存在しないため記載する
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroy
+  has_many :reverse_relationships, foreign_key: "followed_id", class_name: "Relationship", dependent: :destroy
+
+  has_many :followed_users, through: :relationships, source: :followed
+  has_many :followers, through: :reverse_relationships, source: :follower
+
+
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.find_by(email: auth.info.email)
 
@@ -54,5 +64,20 @@ class User < ActiveRecord::Base
         params.delete :current_password
         update_without_password(params, *options)
       end
+    end
+
+
+    #指定のユーザをフォローする
+    def follow!(other_user)
+      relationships.create!(followed_id: other_user.id)
+    end
+
+    #フォローしているかどうかを確認する
+    def following?(other_user)
+      relationships.find_by(followed_id: other_user.id)
+    end
+
+    def unfollow!(other_user)
+      relationships.find_by(followed_id: other_user.id).destroy
     end
 end
