@@ -1,15 +1,11 @@
-class UsersController < ApplicationController
-end
-
 class TopicsController < ApplicationController
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
 
   def index
     @topic = Topic.new
     @topics = Topic.all
-    @users = User.all
-
+    @users = User.find(current_user.id).followers
     @topic_find = Topic.new
 
 

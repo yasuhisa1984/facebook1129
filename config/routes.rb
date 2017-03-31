@@ -1,12 +1,8 @@
 Rails.application.routes.draw do
 
-
   get 'relationships/create'
-
   get 'relationships/destroy'
-
   get 'relationships/create'
-
   get 'relationships/destroy'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
@@ -15,10 +11,12 @@ Rails.application.routes.draw do
     omniauth_callbacks: "users/omniauth_callbacks"
   }
 
-  root 'pictures#index'
+
   resources :pictures, only: [:index, :new, :create, :edit, :update, :destroy]
-  resources :users, only: [:index]
   resources :relationships, only: [:create, :destroy]
+  resources :users, only: [:index, :show]
+
+
   resources :conversations do
     resources :messages
   end
@@ -30,7 +28,9 @@ Rails.application.routes.draw do
       post :confirm
     end
   end
+  root 'topics#index'
 
+  
   if Rails.env.development?
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end

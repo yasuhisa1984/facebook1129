@@ -2,19 +2,25 @@
 class TopicsController < ApplicationController
 end
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:edit, :destroy]
+  before_action :set_comment, only: [:index, :edit, :destroy]
+
   def index
     @com = "これは実験"
+    @topic_f = Topic.find(params[:topic_id])
+    @comment = Comment.find(params[:id])
+  end
+
+  def new
+    @topic_f = Topic.find(params[:topic_id])
+    @comment = @topic_f.comments.build
   end
 
   def create
     # ログインユーザーに紐付けてインスタンス生成するためbuildメソッドを使用します。
     @comment = current_user.comments.build(comment_params)
     @topic = @comment.topic
+    @comment.save
     @topics = Topic.all
-    @topic.save
-    # クライアント要求に応じてフォーマットを変更
-
   end
 
 
