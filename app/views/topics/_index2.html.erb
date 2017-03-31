@@ -1,3 +1,7 @@
+<div class="alert alert-danger hide" id="image-new-error-message">
+  データの登録に失敗しました。
+  <div id="errors"></div>
+</div>
 <% @topics.each do |topic| %>
     <%= profile_img(topic.user) if profile_img(topic.user) %>
     <%= topic.created_at.strftime("%y/%m/%d %p %l:%M") %>

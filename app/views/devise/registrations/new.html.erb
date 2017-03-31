@@ -3,7 +3,7 @@
     <h2>サインアップ</h2>
       　　<p class="flash"><%= notice %><%= alert %></p>
     <%= form_for(resource, as: resource_name, url: user_registration_path) do |f| %>
-      <%= devise_error_messages! %>
+      <%= render 'partial/deviseErrorMsg' %>
 
       <div class="field">
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
