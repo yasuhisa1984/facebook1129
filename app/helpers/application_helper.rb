@@ -21,6 +21,11 @@ module ApplicationHelper
   end
 end
 
+# 改行コードをbrタグへ変換する
+def text_br(str)
+  html_escape(str).gsub(/\r\n|\r|\n/, "<br>").html_safe
+end
+
 module ActionView
   module Helpers
     module FormHelper

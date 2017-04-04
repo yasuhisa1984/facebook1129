@@ -29,7 +29,7 @@ gem 'slim-rails'
 gem 'toastr-rails'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'remotipart', '~> 1.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

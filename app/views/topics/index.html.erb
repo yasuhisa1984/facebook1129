@@ -1,28 +1,47 @@
 <div class="container">
     <div class="row">
-        <section class="main-header">
-        </section>
+        <section class="main-header"></section>
         <div class="col-md-3">
-            <p class="text-center">メニュー表</p>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="text-center">メニュー表</p>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-7">
-          <%= link_to new_topic_path, remote: true do %>
+        <div class="col-md-6">
+            <%= link_to new_topic_path, remote: true do %>
             <%= form_for(@topic, data: { remote: true }) do |f| %>
-            <%= f.label :投稿を作成 %>
-            <%= f.text_field :content, class: 'form-control', :placeholder => "いまなにしてる？",:onclick => "this.select()"  %>
-          <br>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="text-center"><%= f.label :投稿を作成 %></p>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group"><%= f.text_field :content, class: 'form-control', :placeholder => "いまなにしてる？",:onclick => "this.select()"  %></div>
+                </div>
+            </div>
             <% end %>
-          <% end %>
-          <div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
-          <div class="product-index"><%= render "index2" %></div>
+            <% end %>
+            <div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+            <div class="product-index"><%= render "index2" %></div>
         </div>
-        <div class="col-md-2">
-            <p class="text-center">友達リスト</p>
-              <ul>
-                <% @users.each do |user| %>
-                <li><%= user.name %></li>
-                <% end %>
-              </ul>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <p class="text-center">友達リスト</p>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                    <dl>
+                        <% @users.each do |user| %>
+                        <dt><%= image_tag user.image_url, :size => "32x32", :alt => "アイコン" %>
+                          <%= user.name %></dt>
+                        <% end %>
+                    </dl>
+                </div>
+            </div>
         </div>
     </div>
 </div>

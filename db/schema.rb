@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170328051306) do
+ActiveRecord::Schema.define(version: 20170402080547) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,14 +31,6 @@ ActiveRecord::Schema.define(version: 20170328051306) do
     t.integer  "country_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "cart_items", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "product_id", null: false
-    t.integer  "quantity",   null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "comments", force: :cascade do |t|
@@ -71,26 +63,6 @@ ActiveRecord::Schema.define(version: 20170328051306) do
   add_index "messages", ["conversation_id"], name: "index_messages_on_conversation_id", using: :btree
   add_index "messages", ["user_id"], name: "index_messages_on_user_id", using: :btree
 
-  create_table "order_items", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "product_id", null: false
-    t.integer  "order_id",   null: false
-    t.integer  "price",      null: false
-    t.integer  "quantity",   null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "orders", force: :cascade do |t|
-    t.string   "title",          limit: 20, null: false
-    t.text     "description",               null: false
-    t.string   "image_url",                 null: false
-    t.integer  "price",                     null: false
-    t.integer  "stock_quantity",            null: false
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-  end
-
   create_table "pictures", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
@@ -98,16 +70,6 @@ ActiveRecord::Schema.define(version: 20170328051306) do
     t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.text     "picture"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string   "title",          limit: 20, null: false
-    t.text     "description",               null: false
-    t.string   "image_url",                 null: false
-    t.integer  "price",                     null: false
-    t.integer  "stock_quantity",            null: false
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
   end
 
   create_table "relationships", force: :cascade do |t|
@@ -126,6 +88,7 @@ ActiveRecord::Schema.define(version: 20170328051306) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
+    t.string   "image"
   end
 
   create_table "users", force: :cascade do |t|

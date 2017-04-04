@@ -9,10 +9,13 @@
         </div>
         <div class="modal-body">
             <%= f.label :コメント %>
-            <span class="text-info">
             <%= f.text_area  :content, rows: 10, class: 'form-control', :placeholder => "いまなにしてる？"  %>
             <br>
-            <%= f.submit '保存する', class: 'btn btn-primary btn-block' %>
+            <%= image_tag @topic.image, width: 80, hight: 80 if @topic.image? %>
+            <%= f.label :写真 %>
+            <%= f.file_field :image %>
+            <%= f.hidden_field :image_cache %><br>
+            <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
         </div>
     </div>
     <% end %>

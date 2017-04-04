@@ -8,7 +8,6 @@ class TopicsController < ApplicationController
     @users = User.find(current_user.id).followers
     @topic_find = Topic.new
 
-
   end
 
   def new
@@ -21,10 +20,8 @@ class TopicsController < ApplicationController
 
   # showアククションを定義します。入力フォームと一覧を表示するためインスタンスを2つ生成します。
   def show
-    @topic_f = Topic.find(1)
-    @comment = @topic_f.comments.build
-    #@comment = @topic.comments.build
-    @comments = @topic.comments
+    @users = User.find(current_user.id).followers
+    @topic_find = Topic.new
   end
 
 
@@ -54,7 +51,7 @@ class TopicsController < ApplicationController
 
   private
     def topics_params
-      params.require(:topic).permit(:content)
+      params.require(:topic).permit(:content, :image)
     end
 
     def comment_params
