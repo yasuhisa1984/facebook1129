@@ -5,7 +5,8 @@ class TopicsController < ApplicationController
   def index
     @topic = Topic.new
     @topics = Topic.all
-    @users = User.find(current_user.id).followers
+
+    @users = User.find(current_user.id).followed_users
     @topic_find = Topic.new
 
   end

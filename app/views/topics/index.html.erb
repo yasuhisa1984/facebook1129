@@ -25,18 +25,18 @@
             <% end %>
             <% end %>
             <div id="product-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
-            <div class="product-index"><%= render "index2" %></div>
+            <div class="product-index"><%= render "topic" %></div>
         </div>
         <div class="col-md-3">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <p class="text-center">友達リスト</p>
+                    <p class="text-center">フォローしている友達リスト</p>
                 </div>
                 <div class="panel-body">
                     <div class="list-group">
                     <dl>
                         <% @users.each do |user| %>
-                        <dt><%= image_tag user.image_url, :size => "32x32", :alt => "アイコン" %>
+                        <dt><%= profile_img(user) %>
                           <%= user.name %></dt>
                         <% end %>
                     </dl>
