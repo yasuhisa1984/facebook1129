@@ -7,7 +7,7 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-server '52.199.95.77', user: 'app', roles: %w{app db web}
+server '13.112.140.177', user: 'app', roles: %w{app db web}
 set :ssh_options, keys: '/Users/penmouse275/.ssh/id_rsa'
 
 # role-based syntax
