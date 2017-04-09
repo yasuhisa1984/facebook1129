@@ -1,9 +1,15 @@
 # Load DSL and set up stages
-require "capistrano/setup"
-
+require 'capistrano/setup'
+require 'capistrano/deploy'
+require 'capistrano/rbenv'
+require 'capistrano/bundler'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
+require 'capistrano3/unicorn'
 # Include default deployment tasks
 require "capistrano/deploy"
-
+# taskを記述したファイルを読み込むよう設定。　場所と拡張子を指定。
+Dir.glob('lib/capistrano/tasks/*.rb').each { |r| import r }
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
@@ -15,13 +21,13 @@ require "capistrano/deploy"
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
-require 'capistrano/setup'
-require 'capistrano/deploy'
-require 'capistrano/rbenv'
-require 'capistrano/bundler'
-require 'capistrano/rails/assets'
-require 'capistrano/rails/migrations'
-require 'capistrano3/unicorn'
+# require 'capistrano/rvm'
+# require 'capistrano/rbenv'
+# require 'capistrano/chruby'
+# require 'capistrano/bundler'
+# require 'capistrano/rails/assets'
+# require 'capistrano/rails/migrations'
+# require 'capistrano/passenger'
 
-# taskを記述したファイルを読み込むよう設定。　場所と拡張子を指定。
-Dir.glob('lib/capistrano/tasks/*.rb').each { |r| import r }
+# Load custom tasks from `lib/capistrano/tasks` if you have any defined
+Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
