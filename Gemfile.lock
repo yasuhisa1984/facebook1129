@@ -303,7 +303,6 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
-    libv8 (3.16.14.19)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -414,7 +413,6 @@ GEM
       nokogiri (~> 1.5)
       trollop (~> 2.1)
     rdoc (4.3.0)
-    ref (2.0.0)
     remotipart (1.3.1)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
@@ -472,9 +470,6 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     temple (0.7.7)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
@@ -533,7 +528,6 @@ DEPENDENCIES
   jquery-turbolinks
   launchy
   letter_opener_web
-  libv8 (= 3.16.14.19)
   omniauth
   omniauth-facebook
   omniauth-twitter
@@ -550,7 +544,6 @@ DEPENDENCIES
   selenium-webdriver
   slim-rails
   spring
-  therubyracer
   turbolinks
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)
