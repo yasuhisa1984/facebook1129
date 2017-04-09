@@ -6,6 +6,7 @@ require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require 'capistrano3/unicorn'
+require "bundler/capistrano"
 # Include default deployment tasks
 require "capistrano/deploy"
 # taskを記述したファイルを読み込むよう設定。　場所と拡張子を指定。
