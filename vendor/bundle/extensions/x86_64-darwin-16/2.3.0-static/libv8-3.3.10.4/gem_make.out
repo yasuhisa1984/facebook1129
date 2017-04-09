@@ -1,0 +1,43 @@
+current directory: /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/libv8-3.3.10.4/ext/libv8
+/Users/penmouse275/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20170409-66844-1dht1cs.rb extconf.rb 
+Checking for Python...2.7.13
+Compiling V8...
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+
+scons: warning: Ignoring missing SConscript 'obj/test/release/SConscript'
+File "/Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/libv8-3.3.10.4/lib/libv8/build/v8/SConstruct", line 1407, in BuildSpecific
+In file included from src/accessors.cc:28:
+In file included from src/v8.h:63:
+In file included from src/objects-inl.h:38:
+src/objects.h:896:36: error: shifting a negative signed value is undefined [-Werror,-Wshift-negative-value]
+  static const int kMinValue = (-1 << (kSmiValueSize - 1));
+                                ~~ ^
+src/objects.h:5607:36: error: shifting a negative signed value is undefined [-Werror,-Wshift-negative-value]
+      (~kMaxCachedArrayIndexLength << kArrayIndexHashLengthShift) |
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+In file included from src/accessors.cc:31:
+In file included from src/ast.h:34:
+src/jsregexp.h:1075:7: error: 'v8::internal::ChoiceNode::GreedyLoopTextLength' hides overloaded virtual function [-Werror,-Woverloaded-virtual]
+  int GreedyLoopTextLength(GuardedAlternative* alternative);
+      ^
+src/jsregexp.h:633:15: note: hidden overloaded virtual function 'v8::internal::RegExpNode::GreedyLoopTextLength' declared here: different number of parameters (0 vs 1)
+  virtual int GreedyLoopTextLength() { return kNodeIsTooComplexForGreedyLoops; }
+              ^
+In file included from src/accessors.cc:31:
+src/ast.h:1079:9: error: 'this' pointer cannot be null in well-defined C++ code; comparison may be assumed to always evaluate to false [-Werror,-Wtautological-undefined-compare]
+    if (this == NULL || var_ == NULL) return NULL;
+        ^~~~    ~~~~
+4 errors generated.
+scons: *** [obj/release/accessors.o] Error 1
+make: *** [build/v8/libv8.a] Error 2
+creating Makefile
+
+current directory: /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/libv8-3.3.10.4/ext/libv8
+make "DESTDIR=" clean
+
+current directory: /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/libv8-3.3.10.4/ext/libv8
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/libv8-3.3.10.4/ext/libv8
+make "DESTDIR=" install
