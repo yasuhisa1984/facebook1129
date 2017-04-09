@@ -2,9 +2,8 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails'
 gem 'unicorn'
-#gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
-#gem 'libv8', '= 3.16.14.19'
 gem'annotate_models'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
