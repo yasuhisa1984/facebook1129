@@ -1,4 +1,3 @@
-require "bundler/capistrano"
 lock '3.6.0'
 
 # デプロイするアプリケーション名
