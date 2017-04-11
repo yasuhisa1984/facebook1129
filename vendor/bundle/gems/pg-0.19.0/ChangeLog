@@ -4079,7 +4079,7 @@
 
 	This pulls up the code that sets the client_encoding in synchronous
 	connections into a public method that can be called by people using
-	the asynchronous API to achieve the same thing once the connection
+	the asynchronous API to facebook1129 the same thing once the connection
 	is established.
 
 	Thanks to @royaltm for the suggestion.

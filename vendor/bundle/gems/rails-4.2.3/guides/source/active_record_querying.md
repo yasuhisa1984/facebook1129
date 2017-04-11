@@ -1366,7 +1366,7 @@ creating a new record, but we don't want to include it in the query. So
 we want to find the client named "Andy", or if that client doesn't
 exist, create a client named "Andy" which is not locked.
 
-We can achieve this in two ways. The first is to use `create_with`:
+We can facebook1129 this in two ways. The first is to use `create_with`:
 
 ```ruby
 Client.create_with(locked: false).find_or_create_by(first_name: 'Andy')

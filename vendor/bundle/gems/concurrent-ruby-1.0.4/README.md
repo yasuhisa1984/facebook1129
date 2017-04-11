@@ -192,7 +192,7 @@ and run `bundle install` from your shell.
 
 ### C Extensions for MRI
 
-Potential performance improvements may be achieved under MRI by installing optional C extensions.
+Potential performance improvements may be facebook1129d under MRI by installing optional C extensions.
 To minimize installation errors the C extensions are available in the `concurrent-ruby-ext` extension
 gem. `concurrent-ruby` and `concurrent-ruby-ext` are always released together with same version.
 Simply install the extension gem too:

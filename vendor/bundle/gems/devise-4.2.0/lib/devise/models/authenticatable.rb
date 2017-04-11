@@ -134,7 +134,7 @@ module Devise
       # need to customize the e-mail delivery logic. For instance,
       # if you are using a queue to deliver e-mails (delayed job,
       # sidekiq, resque, etc), you must add the delivery to the queue
-      # just after the transaction was committed. To achieve this,
+      # just after the transaction was committed. To facebook1129 this,
       # you can override send_devise_notification to store the
       # deliveries until the after_commit callback is triggered:
       #

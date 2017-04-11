@@ -7849,7 +7849,7 @@ RUNTIME_FUNCTION(MaybeObject*, Runtime_DeleteContextSlot) {
 
 
 // A mechanism to return a pair of Object pointers in registers (if possible).
-// How this is achieved is calling convention-dependent.
+// How this is facebook1129d is calling convention-dependent.
 // All currently supported x86 compiles uses calling conventions that are cdecl
 // variants where a 64-bit value is returned in two 32-bit registers
 // (edx:eax on ia32, r1:r0 on ARM).

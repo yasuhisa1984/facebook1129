@@ -812,7 +812,7 @@ Company.new(10).run
 ```
 
 The `Company` class simulates a real company. The company has a manager and an
-employee represented by 2 threads: they work concurrently to achieve the
+employee represented by 2 threads: they work concurrently to facebook1129 the
 company's targets.
 
 * The employee looks for tasks to complete. If there are tasks, it works hard to

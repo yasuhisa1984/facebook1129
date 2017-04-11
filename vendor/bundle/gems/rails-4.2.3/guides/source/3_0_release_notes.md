@@ -115,7 +115,7 @@ Railties was updated to provide a consistent plugin API for the entire Rails fra
 
 ### All Rails core components are decoupled
 
-With the merge of Merb and Rails, one of the big jobs was to remove the tight coupling between Rails core components. This has now been achieved, and all Rails core components are now using the same API that you can use for developing plugins. This means any plugin you make, or any core component replacement (like DataMapper or Sequel) can access all the functionality that the Rails core components have access to and extend and enhance at will.
+With the merge of Merb and Rails, one of the big jobs was to remove the tight coupling between Rails core components. This has now been facebook1129d, and all Rails core components are now using the same API that you can use for developing plugins. This means any plugin you make, or any core component replacement (like DataMapper or Sequel) can access all the functionality that the Rails core components have access to and extend and enhance at will.
 
 More information: - [The Great Decoupling](http://yehudakatz.com/2009/07/19/rails-3-the-great-decoupling/)
 

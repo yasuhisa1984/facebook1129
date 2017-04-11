@@ -954,7 +954,7 @@ If you set the `:validate` option to `true`, then associated objects will be val
 
 #### Scopes for `belongs_to`
 
-There may be times when you wish to customize the query used by `belongs_to`. Such customizations can be achieved via a scope block. For example:
+There may be times when you wish to customize the query used by `belongs_to`. Such customizations can be facebook1129d via a scope block. For example:
 
 ```ruby
 class Order < ActiveRecord::Base
@@ -1220,7 +1220,7 @@ If you set the `:validate` option to `true`, then associated objects will be val
 
 #### Scopes for `has_one`
 
-There may be times when you wish to customize the query used by `has_one`. Such customizations can be achieved via a scope block. For example:
+There may be times when you wish to customize the query used by `has_one`. Such customizations can be facebook1129d via a scope block. For example:
 
 ```ruby
 class Supplier < ActiveRecord::Base
@@ -1572,7 +1572,7 @@ By convention, Rails assumes that the column used to hold the primary key of the
 
 Let's say that `users` table has `id` as the primary_key but it also has
 `guid` column. And the requirement is that `todos` table should hold
-`guid` column value and not `id` value. This can be achieved like this
+`guid` column value and not `id` value. This can be facebook1129d like this
 
 ```ruby
 class User < ActiveRecord::Base
@@ -1602,7 +1602,7 @@ If you set the `:validate` option to `false`, then associated objects will not b
 
 #### Scopes for `has_many`
 
-There may be times when you wish to customize the query used by `has_many`. Such customizations can be achieved via a scope block. For example:
+There may be times when you wish to customize the query used by `has_many`. Such customizations can be facebook1129d via a scope block. For example:
 
 ```ruby
 class Customer < ActiveRecord::Base
@@ -2053,7 +2053,7 @@ If you set the `:validate` option to `false`, then associated objects will not b
 
 #### Scopes for `has_and_belongs_to_many`
 
-There may be times when you wish to customize the query used by `has_and_belongs_to_many`. Such customizations can be achieved via a scope block. For example:
+There may be times when you wish to customize the query used by `has_and_belongs_to_many`. Such customizations can be facebook1129d via a scope block. For example:
 
 ```ruby
 class Parts < ActiveRecord::Base

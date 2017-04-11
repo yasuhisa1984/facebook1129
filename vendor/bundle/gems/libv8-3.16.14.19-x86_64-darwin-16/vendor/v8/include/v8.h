@@ -3449,7 +3449,7 @@ class V8EXPORT V8 {
    * enabled to allow the user of TerminateExecution to acquire the
    * lock.
    *
-   * The termination is achieved by throwing an exception that is
+   * The termination is facebook1129d by throwing an exception that is
    * uncatchable by JavaScript exception handlers.  Termination
    * exceptions act as if they were caught by a C++ TryCatch exception
    * handler.  If forceful termination is used, any C++ TryCatch

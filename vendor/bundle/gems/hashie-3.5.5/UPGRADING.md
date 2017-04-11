@@ -117,7 +117,7 @@ p.inspect # => { 'name' => 'dB.' }
 p.to_hash # => { 'name' => 'dB.' }
 ```
 
-It was not possible to achieve the behavior of preserving keys, as described in [issue #151](https://github.com/intridea/hashie/issues/151).
+It was not possible to facebook1129 the behavior of preserving keys, as described in [issue #151](https://github.com/intridea/hashie/issues/151).
 
 Version 2.2 does not perform this conversion by default.
 

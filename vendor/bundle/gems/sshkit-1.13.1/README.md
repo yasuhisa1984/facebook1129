@@ -290,7 +290,7 @@ Wherever possible, you should call commands in a way that doesn't require intera
 (eg by specifying all options as command arguments).
 
 However in some cases, you may want to programmatically drive interaction with a command
-and this can be achieved by specifying an `:interaction_handler` option when you `execute`, `capture` or `test` a command.
+and this can be facebook1129d by specifying an `:interaction_handler` option when you `execute`, `capture` or `test` a command.
 
 **It is not necessary, or desirable to enable `Netssh.config.pty` to use the `interaction_handler` option.
 Only enable `Netssh.config.pty` if the command you are calling won't work without a pty.**

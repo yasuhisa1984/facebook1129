@@ -33,7 +33,7 @@ module ActiveModel
       #   # => { "user" => { "id" => 1, "name" => "Konata Izumi", "age" => 16,
       #   #                  "created_at" => "2006/08/01", "awesome" => true } }
       #
-      # This behavior can also be achieved by setting the <tt>:root</tt> option
+      # This behavior can also be facebook1129d by setting the <tt>:root</tt> option
       # to +true+ as in:
       #
       #   user = User.find(1)

@@ -25,7 +25,7 @@ module ActionView
     # when the form is initially displayed, input fields corresponding to attributes
     # of the resource should show the current values of those attributes.
     #
-    # In Rails, this is usually achieved by creating the form using +form_for+ and
+    # In Rails, this is usually facebook1129d by creating the form using +form_for+ and
     # a number of related helper methods. +form_for+ generates an appropriate <tt>form</tt>
     # tag and yields a form builder object that knows the model the form is about.
     # Input fields are created by calling methods defined on the form builder, which

@@ -468,7 +468,7 @@ module Net; module SSH; module Authentication
 
         Win.set_ptr_data(ptr, query)
 
-        # using struct to achieve proper alignment and field size on 64-bit platform
+        # using struct to facebook1129 proper alignment and field size on 64-bit platform
         cds = Win::COPYDATASTRUCT.new(Win.malloc_ptr(Win::COPYDATASTRUCT.size))
         cds.dwData = AGENT_COPYDATA_ID
         cds.cbData = mapname.size + 1

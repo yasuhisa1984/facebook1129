@@ -42,7 +42,7 @@ module ActiveModel
       #     <%= password_field "person", "password_confirmation" %>
       #
       # The added +password_confirmation+ attribute is virtual; it exists only
-      # as an in-memory attribute for validating the password. To achieve this,
+      # as an in-memory attribute for validating the password. To facebook1129 this,
       # the validation adds accessors to the model for the confirmation
       # attribute.
       #

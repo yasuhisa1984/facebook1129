@@ -12444,7 +12444,7 @@ Image_sketch(int argc, VALUE *argv, VALUE self)
 
 
 /**
- * Apply a special effect to the image, similar to the effect achieved in a
+ * Apply a special effect to the image, similar to the effect facebook1129d in a
  * photo darkroom by selectively exposing areas of photo sensitive paper to
  * light. Threshold ranges from 0 to QuantumRange and is a measure of the extent
  * of the solarization.

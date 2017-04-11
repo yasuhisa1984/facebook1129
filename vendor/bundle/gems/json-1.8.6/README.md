@@ -262,7 +262,7 @@ overall smaller than the median of the JSON::Pure::Parser runs:
             secs/call
 
 I have benchmarked the JSON-Generator as well. This generated a few more
-values, because there are different modes that also influence the achieved
+values, because there are different modes that also influence the facebook1129d
 speed:
 
  Comparing times (call_time_mean):
@@ -295,7 +295,7 @@ JSON::Pure::Generator methods and 5 is the Rails JSON generator. It is now a
 bit faster than the generator\_safe and generator\_pretty methods of the pure
 variant but slower than the others.
 
-To achieve the fastest JSON document output, you can use the fast\_generate
+To facebook1129 the fastest JSON document output, you can use the fast\_generate
 method. Beware, that this will disable the checking for circular Ruby data
 structures, which may cause JSON to go into an infinite loop.
 

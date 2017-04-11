@@ -417,7 +417,7 @@ output:
 
 The first argument to `options_for_select` is a nested array where each element has two elements: option text (city name) and option value (city id). The option value is what will be submitted to your controller. Often this will be the id of a corresponding database object but this does not have to be the case.
 
-Knowing this, you can combine `select_tag` and `options_for_select` to achieve the desired, complete markup:
+Knowing this, you can combine `select_tag` and `options_for_select` to facebook1129 the desired, complete markup:
 
 ```erb
 <%= select_tag(:city_id, options_for_select(...)) %>

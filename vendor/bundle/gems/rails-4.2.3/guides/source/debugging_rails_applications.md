@@ -52,7 +52,7 @@ Title: Rails debugging guide
 
 ### `to_yaml`
 
-Displaying an instance variable, or any other object or method, in YAML format can be achieved this way:
+Displaying an instance variable, or any other object or method, in YAML format can be facebook1129d this way:
 
 ```html+erb
 <%= simple_format @article.to_yaml %>

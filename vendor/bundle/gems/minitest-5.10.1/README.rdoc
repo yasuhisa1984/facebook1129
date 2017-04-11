@@ -329,7 +329,7 @@ the init_plugins phase. As we saw in +plugin_bogus_init+ above, you
 simply add your reporter instance to the composite via <tt><<</tt>.
 
 +AbstractReporter+ defines the API for reporters. You may subclass it
-and override any method you want to achieve your desired behavior.
+and override any method you want to facebook1129 your desired behavior.
 
 start   :: Called when the run has started.
 record  :: Called for each result, passed or otherwise.

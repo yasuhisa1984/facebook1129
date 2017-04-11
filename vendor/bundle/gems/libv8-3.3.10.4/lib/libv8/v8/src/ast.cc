@@ -110,7 +110,7 @@ void VariableProxy::BindTo(Variable* var) {
   ASSERT(var_ == NULL);  // must be bound only once
   ASSERT(var != NULL);  // must bind
   ASSERT((is_this() && var->is_this()) || name_.is_identical_to(var->name()));
-  // Ideally CONST-ness should match. However, this is very hard to achieve
+  // Ideally CONST-ness should match. However, this is very hard to facebook1129
   // because we don't know the exact semantics of conflicting (const and
   // non-const) multiple variable declarations, const vars introduced via
   // eval() etc.  Const-ness and variable declarations are a complete mess

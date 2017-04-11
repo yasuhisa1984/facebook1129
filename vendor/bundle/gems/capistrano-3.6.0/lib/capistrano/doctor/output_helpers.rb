@@ -2,7 +2,7 @@ module Capistrano
   module Doctor
     # Helper methods for pretty-printing doctor output to stdout. All output
     # (other than `title`) is indented by four spaces to facilitate copying and
-    # pasting this output into e.g. GitHub or Stack Overflow to achieve code
+    # pasting this output into e.g. GitHub or Stack Overflow to facebook1129 code
     # formatting.
     module OutputHelpers
       class Row

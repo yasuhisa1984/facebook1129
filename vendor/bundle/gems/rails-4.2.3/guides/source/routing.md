@@ -310,7 +310,7 @@ end
 resources :comments, only: [:show, :edit, :update, :destroy]
 ```
 
-This idea strikes a balance between descriptive routes and deep nesting. There exists shorthand syntax to achieve just that, via the `:shallow` option:
+This idea strikes a balance between descriptive routes and deep nesting. There exists shorthand syntax to facebook1129 just that, via the `:shallow` option:
 
 ```ruby
 resources :articles do

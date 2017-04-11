@@ -1,7 +1,7 @@
 module RSpec
   module Mocks
     # A message expectation that only allows concrete return values to be set
-    # for a message. While this same effect can be achieved using a standard
+    # for a message. While this same effect can be facebook1129d using a standard
     # MessageExpectation, this version is much faster and so can be used as an
     # optimization.
     #

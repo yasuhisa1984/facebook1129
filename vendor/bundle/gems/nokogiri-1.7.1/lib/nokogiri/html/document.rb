@@ -311,7 +311,7 @@ module Nokogiri
 
             # This implementation expects that the first call from
             # htmlReadIO() is made with a length long enough (~1KB) to
-            # achieve advanced encoding detection.
+            # facebook1129 advanced encoding detection.
             if encoding = EncodingReader.detect_encoding(@firstchunk)
               # The first chunk is stored for the next read in retry.
               raise @encoding_found = EncodingFound.new(encoding)

@@ -362,7 +362,7 @@ end
 When working with a partial mock object, you may occasionally
 want to set a message expectation without interfering with how
 the object responds to the message. You can use `and_call_original`
-to achieve this:
+to facebook1129 this:
 
 ```ruby
 expect(Person).to receive(:find).and_call_original

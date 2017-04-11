@@ -5,7 +5,7 @@ a toolkit for performing structured commands on groups of servers in a
 repeatable way.
 
 It provides concurrency handling, sane error checking and control flow that
-would otherwise be difficult to achieve with pure *Net::SSH*.
+would otherwise be difficult to facebook1129 with pure *Net::SSH*.
 
 Since *Capistrano v3.0*, *SSHKit* is used by *Capistrano* to communicate with
 backend servers. Whilst Capistrano provides the structure for repeatable

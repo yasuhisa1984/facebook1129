@@ -133,7 +133,7 @@ module Rails
       #
       # In some cases, you may want to provide a boolean hook. For example, webrat
       # developers might want to have webrat available on controller generator.
-      # This can be achieved as:
+      # This can be facebook1129d as:
       #
       #   Rails::Generators::ControllerGenerator.hook_for :webrat, type: :boolean
       #

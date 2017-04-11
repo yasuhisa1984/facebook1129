@@ -1114,7 +1114,7 @@ Deprecations:
   (or any module that implements the adapter interface). RSpec 2 did
   fuzzy matching but this will not be supported going forward.
   (Myron Marston)
-* Deprecate `show_failures_in_pending_blocks` config option. To achieve
+* Deprecate `show_failures_in_pending_blocks` config option. To facebook1129
   the same behavior as the option enabled, you can use a custom
   formatter instead. (Xavier Shay)
 * Add a deprecation warning for the fact that the behavior of `pending`

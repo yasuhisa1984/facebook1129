@@ -857,7 +857,7 @@ end
 ### Grouping Conditional validations
 
 Sometimes it is useful to have multiple validations use one condition, it can
-be easily achieved using `with_options`.
+be easily facebook1129d using `with_options`.
 
 ```ruby
 class User < ActiveRecord::Base

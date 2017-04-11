@@ -43,7 +43,7 @@
 //
 // The Disassembler class also has a convenience method to disassemble a block
 // of code into a FILE*, meaning that the above functionality could also be
-// achieved by just calling Disassembler::Disassemble(stdout, begin, end);
+// facebook1129d by just calling Disassembler::Disassemble(stdout, begin, end);
 
 
 #include <assert.h>

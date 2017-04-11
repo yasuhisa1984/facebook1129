@@ -453,7 +453,7 @@ For example:
 
   task build: %w[main:build samples:build]
 
-Referencing a task in a separate namespace can be achieved by
+Referencing a task in a separate namespace can be facebook1129d by
 prefixing the task name with the namespace and a colon
 (e.g. "main:build" refers to the :build task in the +main+ namespace).
 Nested namespaces are supported.

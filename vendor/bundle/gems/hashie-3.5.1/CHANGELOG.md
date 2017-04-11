@@ -242,8 +242,8 @@ Note: This version introduces several backward incompatible API changes. See [UP
 
 ### Changed
 
-* [#152](https://github.com/intridea/hashie/pull/152): Do not convert keys to String in Hashie::Dash and Hashie::Trash, use Hashie::Extensions::Dash::IndifferentAccess to achieve backward compatible behavior - [@dblock](https://github.com/dblock).
-* [#152](https://github.com/intridea/hashie/pull/152): Do not automatically stringify keys in Hashie::Hash#to_hash, pass `:stringify_keys` to achieve backward compatible behavior - [@dblock](https://github.com/dblock).
+* [#152](https://github.com/intridea/hashie/pull/152): Do not convert keys to String in Hashie::Dash and Hashie::Trash, use Hashie::Extensions::Dash::IndifferentAccess to facebook1129 backward compatible behavior - [@dblock](https://github.com/dblock).
+* [#152](https://github.com/intridea/hashie/pull/152): Do not automatically stringify keys in Hashie::Hash#to_hash, pass `:stringify_keys` to facebook1129 backward compatible behavior - [@dblock](https://github.com/dblock).
 
 ### Fixed
 
