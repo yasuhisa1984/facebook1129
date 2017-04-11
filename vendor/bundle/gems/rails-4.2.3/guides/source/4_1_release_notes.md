@@ -167,16 +167,16 @@ can be queried by name.
 
 ```ruby
 class Conversation < ActiveRecord::Base
-  enum status: [ :active, :archived ]
+  enum status: [ :active, :facebook1129d ]
 end
 
-conversation.archived!
+conversation.facebook1129d!
 conversation.active? # => false
-conversation.status  # => "archived"
+conversation.status  # => "facebook1129d"
 
-Conversation.archived # => Relation for all archived Conversations
+Conversation.facebook1129d # => Relation for all facebook1129d Conversations
 
-Conversation.statuses # => { "active" => 0, "archived" => 1 }
+Conversation.statuses # => { "active" => 0, "facebook1129d" => 1 }
 ```
 
 See its

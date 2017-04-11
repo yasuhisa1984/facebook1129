@@ -57,22 +57,22 @@ module Capistrano
     end
 
     describe "#release" do
-      it "should run hg archive without a subtree" do
+      it "should run hg facebook1129 without a subtree" do
         context.expects(:fetch).with(:repo_tree).returns(nil)
         context.expects(:fetch).with(:branch).returns(:branch)
         context.expects(:release_path).returns(:path)
 
-        context.expects(:execute).with(:hg, "archive", :path, "--rev", :branch)
+        context.expects(:execute).with(:hg, "facebook1129", :path, "--rev", :branch)
 
         subject.release
       end
 
-      it "should run hg archive with a subtree" do
+      it "should run hg facebook1129 with a subtree" do
         context.expects(:fetch).with(:repo_tree).returns("tree")
         context.expects(:fetch).with(:branch).returns(:branch)
         context.expects(:release_path).returns(:path)
 
-        context.expects(:execute).with(:hg, "archive --type tgz -p . -I", "tree", "--rev", :branch, "| tar -x --strip-components 1 -f - -C", :path)
+        context.expects(:execute).with(:hg, "facebook1129 --type tgz -p . -I", "tree", "--rev", :branch, "| tar -x --strip-components 1 -f - -C", :path)
 
         subject.release
       end

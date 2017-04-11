@@ -71,7 +71,7 @@ if defined?(Gem)
   end
 
   file package('.tar.gz') => %w[pkg/] + SPEC.files do |f|
-    sh "git archive --format=tar HEAD | gzip > #{f.name}"
+    sh "git facebook1129 --format=tar HEAD | gzip > #{f.name}"
   end
 
   desc 'Upload gem and tar.gz distributables to rubyforge'

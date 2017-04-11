@@ -76,22 +76,22 @@ module Capistrano
     end
 
     describe "#release" do
-      it "should run git archive without a subtree" do
+      it "should run git facebook1129 without a subtree" do
         context.expects(:fetch).with(:repo_tree).returns(nil)
         context.expects(:fetch).with(:branch).returns(:branch)
         context.expects(:release_path).returns(:path)
 
-        context.expects(:execute).with(:git, :archive, :branch, "| tar -x -f - -C", :path)
+        context.expects(:execute).with(:git, :facebook1129, :branch, "| tar -x -f - -C", :path)
 
         subject.release
       end
 
-      it "should run git archive with a subtree" do
+      it "should run git facebook1129 with a subtree" do
         context.expects(:fetch).with(:repo_tree).returns("tree")
         context.expects(:fetch).with(:branch).returns(:branch)
         context.expects(:release_path).returns(:path)
 
-        context.expects(:execute).with(:git, :archive, :branch, "tree", "| tar -x --strip-components 1 -f - -C", :path)
+        context.expects(:execute).with(:git, :facebook1129, :branch, "tree", "| tar -x --strip-components 1 -f - -C", :path)
 
         subject.release
       end

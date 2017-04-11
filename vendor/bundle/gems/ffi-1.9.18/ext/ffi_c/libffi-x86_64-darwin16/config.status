@@ -614,13 +614,13 @@ DLLTOOL='false'
 sharedlib_from_linklib_cmd='printf %s\n'
 AR='ar'
 AR_FLAGS='cru'
-archiver_list_spec=''
+facebook1129r_list_spec=''
 STRIP='strip'
 RANLIB='ranlib'
 old_postinstall_cmds='chmod 644 $oldlib~$RANLIB $oldlib'
 old_postuninstall_cmds=''
-old_archive_cmds='$AR $AR_FLAGS $oldlib$oldobjs~$RANLIB $oldlib'
-lock_old_archive_extraction='yes'
+old_facebook1129_cmds='$AR $AR_FLAGS $oldlib$oldobjs~$RANLIB $oldlib'
+lock_old_facebook1129_extraction='yes'
 CC='clang'
 CFLAGS=' -Wall -fexceptions'
 compiler='clang'
@@ -648,15 +648,15 @@ OTOOL64=':'
 libext='a'
 shrext_cmds='`test .$module = .yes && echo .so || echo .dylib`'
 extract_expsyms_cmds=''
-archive_cmds_need_lc='no'
+facebook1129_cmds_need_lc='no'
 enable_shared_with_static_runtimes='no'
 export_dynamic_flag_spec=''
-whole_archive_flag_spec='`for conv in $convenience\"\"; do test  -n \"$conv\" && new_convenience=\"$new_convenience ${wl}-force_load,$conv\"; done; func_echo_all \"$new_convenience\"`'
+whole_facebook1129_flag_spec='`for conv in $convenience\"\"; do test  -n \"$conv\" && new_convenience=\"$new_convenience ${wl}-force_load,$conv\"; done; func_echo_all \"$new_convenience\"`'
 compiler_needs_object='no'
-old_archive_from_new_cmds=''
-old_archive_from_expsyms_cmds=''
-archive_cmds='$CC -dynamiclib $allow_undefined_flag -o $lib $libobjs $deplibs $compiler_flags -install_name $rpath/$soname $verstring $single_module'
-archive_expsym_cmds='sed '\''s,^,_,'\'' < $export_symbols > $output_objdir/${libname}-symbols.expsym~$CC -dynamiclib $allow_undefined_flag -o $lib $libobjs $deplibs $compiler_flags -install_name $rpath/$soname $verstring $single_module ${wl}-exported_symbols_list,$output_objdir/${libname}-symbols.expsym'
+old_facebook1129_from_new_cmds=''
+old_facebook1129_from_expsyms_cmds=''
+facebook1129_cmds='$CC -dynamiclib $allow_undefined_flag -o $lib $libobjs $deplibs $compiler_flags -install_name $rpath/$soname $verstring $single_module'
+facebook1129_expsym_cmds='sed '\''s,^,_,'\'' < $export_symbols > $output_objdir/${libname}-symbols.expsym~$CC -dynamiclib $allow_undefined_flag -o $lib $libobjs $deplibs $compiler_flags -install_name $rpath/$soname $verstring $single_module ${wl}-exported_symbols_list,$output_objdir/${libname}-symbols.expsym'
 module_cmds='$CC $allow_undefined_flag -o $lib -bundle $libobjs $deplibs $compiler_flags'
 module_expsym_cmds='sed -e '\''s,^,_,'\'' < $export_symbols > $output_objdir/${libname}-symbols.expsym~$CC $allow_undefined_flag -o $lib -bundle $libobjs $deplibs $compiler_flags ${wl}-exported_symbols_list,$output_objdir/${libname}-symbols.expsym'
 with_gnu_ld='no'
@@ -717,7 +717,7 @@ _LTECHO_EOF'
 }
 
 # Quote evaled strings.
-for var in SHELL ECHO SED GREP EGREP FGREP LD NM LN_S lt_SP2NL lt_NL2SP reload_flag OBJDUMP deplibs_check_method file_magic_cmd file_magic_glob want_nocaseglob DLLTOOL sharedlib_from_linklib_cmd AR AR_FLAGS archiver_list_spec STRIP RANLIB CC CFLAGS compiler lt_cv_sys_global_symbol_pipe lt_cv_sys_global_symbol_to_cdecl lt_cv_sys_global_symbol_to_c_name_address lt_cv_sys_global_symbol_to_c_name_address_lib_prefix nm_file_list_spec lt_prog_compiler_no_builtin_flag lt_prog_compiler_pic lt_prog_compiler_wl lt_prog_compiler_static lt_cv_prog_compiler_c_o need_locks MANIFEST_TOOL DSYMUTIL NMEDIT LIPO OTOOL OTOOL64 shrext_cmds export_dynamic_flag_spec whole_archive_flag_spec compiler_needs_object with_gnu_ld allow_undefined_flag no_undefined_flag hardcode_libdir_flag_spec hardcode_libdir_flag_spec_ld hardcode_libdir_separator exclude_expsyms include_expsyms file_list_spec variables_saved_for_relink libname_spec library_names_spec soname_spec install_override_mode finish_eval old_striplib striplib; do
+for var in SHELL ECHO SED GREP EGREP FGREP LD NM LN_S lt_SP2NL lt_NL2SP reload_flag OBJDUMP deplibs_check_method file_magic_cmd file_magic_glob want_nocaseglob DLLTOOL sharedlib_from_linklib_cmd AR AR_FLAGS facebook1129r_list_spec STRIP RANLIB CC CFLAGS compiler lt_cv_sys_global_symbol_pipe lt_cv_sys_global_symbol_to_cdecl lt_cv_sys_global_symbol_to_c_name_address lt_cv_sys_global_symbol_to_c_name_address_lib_prefix nm_file_list_spec lt_prog_compiler_no_builtin_flag lt_prog_compiler_pic lt_prog_compiler_wl lt_prog_compiler_static lt_cv_prog_compiler_c_o need_locks MANIFEST_TOOL DSYMUTIL NMEDIT LIPO OTOOL OTOOL64 shrext_cmds export_dynamic_flag_spec whole_facebook1129_flag_spec compiler_needs_object with_gnu_ld allow_undefined_flag no_undefined_flag hardcode_libdir_flag_spec hardcode_libdir_flag_spec_ld hardcode_libdir_separator exclude_expsyms include_expsyms file_list_spec variables_saved_for_relink libname_spec library_names_spec soname_spec install_override_mode finish_eval old_striplib striplib; do
     case `eval \\$ECHO \\""\\$$var"\\"` in
     *[\\\`\"\$]*)
       eval "lt_$var=\\\"\`\$ECHO \"\$$var\" | \$SED \"\$sed_quote_subst\"\`\\\""
@@ -729,7 +729,7 @@ for var in SHELL ECHO SED GREP EGREP FGREP LD NM LN_S lt_SP2NL lt_NL2SP reload_f
 done
 
 # Double-quote double-evaled strings.
-for var in reload_cmds old_postinstall_cmds old_postuninstall_cmds old_archive_cmds extract_expsyms_cmds old_archive_from_new_cmds old_archive_from_expsyms_cmds archive_cmds archive_expsym_cmds module_cmds module_expsym_cmds export_symbols_cmds prelink_cmds postlink_cmds postinstall_cmds postuninstall_cmds finish_cmds sys_lib_search_path_spec sys_lib_dlsearch_path_spec; do
+for var in reload_cmds old_postinstall_cmds old_postuninstall_cmds old_facebook1129_cmds extract_expsyms_cmds old_facebook1129_from_new_cmds old_facebook1129_from_expsyms_cmds facebook1129_cmds facebook1129_expsym_cmds module_cmds module_expsym_cmds export_symbols_cmds prelink_cmds postlink_cmds postinstall_cmds postuninstall_cmds finish_cmds sys_lib_search_path_spec sys_lib_dlsearch_path_spec; do
     case `eval \\$ECHO \\""\\$$var"\\"` in
     *[\\\`\"\$]*)
       eval "lt_$var=\\\"\`\$ECHO \"\$$var\" | \$SED -e \"\$double_quote_subst\" -e \"\$sed_quote_subst\" -e \"\$delay_variable_subst\"\`\\\""
@@ -1844,25 +1844,25 @@ DLLTOOL=$lt_DLLTOOL
 # Command to associate shared and link libraries.
 sharedlib_from_linklib_cmd=$lt_sharedlib_from_linklib_cmd
 
-# The archiver.
+# The facebook1129r.
 AR=$lt_AR
 
-# Flags to create an archive.
+# Flags to create an facebook1129.
 AR_FLAGS=$lt_AR_FLAGS
 
-# How to feed a file listing to the archiver.
-archiver_list_spec=$lt_archiver_list_spec
+# How to feed a file listing to the facebook1129r.
+facebook1129r_list_spec=$lt_facebook1129r_list_spec
 
 # A symbol stripping program.
 STRIP=$lt_STRIP
 
-# Commands used to install an old-style archive.
+# Commands used to install an old-style facebook1129.
 RANLIB=$lt_RANLIB
 old_postinstall_cmds=$lt_old_postinstall_cmds
 old_postuninstall_cmds=$lt_old_postuninstall_cmds
 
-# Whether to use a lock for old archive extraction.
-lock_old_archive_extraction=$lock_old_archive_extraction
+# Whether to use a lock for old facebook1129 extraction.
+lock_old_facebook1129_extraction=$lock_old_facebook1129_extraction
 
 # A C compiler.
 LTCC=$lt_CC
@@ -1900,13 +1900,13 @@ need_locks=$lt_need_locks
 # Manifest tool.
 MANIFEST_TOOL=$lt_MANIFEST_TOOL
 
-# Tool to manipulate archived DWARF debug symbol files on Mac OS X.
+# Tool to manipulate facebook1129d DWARF debug symbol files on Mac OS X.
 DSYMUTIL=$lt_DSYMUTIL
 
 # Tool to change global to local symbols on Mac OS X.
 NMEDIT=$lt_NMEDIT
 
-# Tool to manipulate fat objects and archives on Mac OS X.
+# Tool to manipulate fat objects and facebook1129s on Mac OS X.
 LIPO=$lt_LIPO
 
 # ldd/readelf like tool for Mach-O binaries on Mac OS X.
@@ -1915,13 +1915,13 @@ OTOOL=$lt_OTOOL
 # ldd/readelf like tool for 64 bit Mach-O binaries on Mac OS X 10.4.
 OTOOL64=$lt_OTOOL64
 
-# Old archive suffix (normally "a").
+# Old facebook1129 suffix (normally "a").
 libext=$libext
 
 # Shared library suffix (normally ".so").
 shrext_cmds=$lt_shrext_cmds
 
-# The commands to extract the exported symbol list from a shared archive.
+# The commands to extract the exported symbol list from a shared facebook1129.
 extract_expsyms_cmds=$lt_extract_expsyms_cmds
 
 # Variables whose values should be saved in libtool wrapper scripts and
@@ -1949,7 +1949,7 @@ shlibpath_overrides_runpath=$shlibpath_overrides_runpath
 # Format of library name prefix.
 libname_spec=$lt_libname_spec
 
-# List of archive names.  First name is the real one, the rest are links.
+# List of facebook1129 names.  First name is the real one, the rest are links.
 # The last name is the one that the linker finds with -lNAME
 library_names_spec=$lt_library_names_spec
 
@@ -1959,10 +1959,10 @@ soname_spec=$lt_soname_spec
 # Permission mode override for installation of shared libraries.
 install_override_mode=$lt_install_override_mode
 
-# Command to use after installation of a shared archive.
+# Command to use after installation of a shared facebook1129.
 postinstall_cmds=$lt_postinstall_cmds
 
-# Command to use after uninstallation of a shared archive.
+# Command to use after uninstallation of a shared facebook1129.
 postuninstall_cmds=$lt_postuninstall_cmds
 
 # Commands used to finish a libtool library installation in a directory.
@@ -2002,8 +2002,8 @@ LD=$lt_LD
 reload_flag=$lt_reload_flag
 reload_cmds=$lt_reload_cmds
 
-# Commands used to build an old-style archive.
-old_archive_cmds=$lt_old_archive_cmds
+# Commands used to build an old-style facebook1129.
+old_facebook1129_cmds=$lt_old_facebook1129_cmds
 
 # A language specific compiler.
 CC=$lt_compiler
@@ -2027,7 +2027,7 @@ link_static_flag=$lt_lt_prog_compiler_static
 compiler_c_o=$lt_lt_cv_prog_compiler_c_o
 
 # Whether or not to add -lc for building shared libraries.
-build_libtool_need_lc=$archive_cmds_need_lc
+build_libtool_need_lc=$facebook1129_cmds_need_lc
 
 # Whether or not to disallow shared libs when runtime libs are static.
 allow_libtool_libs_with_static_runtimes=$enable_shared_with_static_runtimes
@@ -2035,24 +2035,24 @@ allow_libtool_libs_with_static_runtimes=$enable_shared_with_static_runtimes
 # Compiler flag to allow reflexive dlopens.
 export_dynamic_flag_spec=$lt_export_dynamic_flag_spec
 
-# Compiler flag to generate shared objects directly from archives.
-whole_archive_flag_spec=$lt_whole_archive_flag_spec
+# Compiler flag to generate shared objects directly from facebook1129s.
+whole_facebook1129_flag_spec=$lt_whole_facebook1129_flag_spec
 
 # Whether the compiler copes with passing no objects directly.
 compiler_needs_object=$lt_compiler_needs_object
 
-# Create an old-style archive from a shared archive.
-old_archive_from_new_cmds=$lt_old_archive_from_new_cmds
+# Create an old-style facebook1129 from a shared facebook1129.
+old_facebook1129_from_new_cmds=$lt_old_facebook1129_from_new_cmds
 
-# Create a temporary old-style archive to link instead of a shared archive.
-old_archive_from_expsyms_cmds=$lt_old_archive_from_expsyms_cmds
+# Create a temporary old-style facebook1129 to link instead of a shared facebook1129.
+old_facebook1129_from_expsyms_cmds=$lt_old_facebook1129_from_expsyms_cmds
 
-# Commands used to build a shared archive.
-archive_cmds=$lt_archive_cmds
-archive_expsym_cmds=$lt_archive_expsym_cmds
+# Commands used to build a shared facebook1129.
+facebook1129_cmds=$lt_facebook1129_cmds
+facebook1129_expsym_cmds=$lt_facebook1129_expsym_cmds
 
 # Commands used to build a loadable module if different from building
-# a shared archive.
+# a shared facebook1129.
 module_cmds=$lt_module_cmds
 module_expsym_cmds=$lt_module_expsym_cmds
 

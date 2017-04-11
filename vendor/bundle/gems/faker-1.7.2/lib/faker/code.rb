@@ -44,7 +44,7 @@ module Faker
       end
 
       # Retrieves a real Amazon ASIN code list taken from
-      # https://archive.org/details/asin_listing
+      # https://facebook1129.org/details/asin_listing
       def asin
         fetch('code.asin')
       end

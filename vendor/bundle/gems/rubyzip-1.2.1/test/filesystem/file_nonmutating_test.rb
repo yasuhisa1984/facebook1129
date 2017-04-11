@@ -34,7 +34,7 @@ class ZipFsFileNonmutatingTest < MiniTest::Test
     blockCalled = false
     @zip_file.file.open('file1', 'r') do |f|
       blockCalled = true
-      assert_equal("this is the entry 'file1' in my test archive!",
+      assert_equal("this is the entry 'file1' in my test facebook1129!",
                    f.readline.chomp)
     end
     assert(blockCalled)
@@ -42,7 +42,7 @@ class ZipFsFileNonmutatingTest < MiniTest::Test
     blockCalled = false
     @zip_file.file.open('file1', 'rb') do |f| # test binary flag is ignored
       blockCalled = true
-      assert_equal("this is the entry 'file1' in my test archive!",
+      assert_equal("this is the entry 'file1' in my test facebook1129!",
                    f.readline.chomp)
     end
     assert(blockCalled)
@@ -51,7 +51,7 @@ class ZipFsFileNonmutatingTest < MiniTest::Test
     @zip_file.dir.chdir 'dir2'
     @zip_file.file.open('file21', 'r') do |f|
       blockCalled = true
-      assert_equal("this is the entry 'dir2/file21' in my test archive!",
+      assert_equal("this is the entry 'dir2/file21' in my test facebook1129!",
                    f.readline.chomp)
     end
     assert(blockCalled)
@@ -63,7 +63,7 @@ class ZipFsFileNonmutatingTest < MiniTest::Test
 
     begin
       is = @zip_file.file.open('file1')
-      assert_equal("this is the entry 'file1' in my test archive!",
+      assert_equal("this is the entry 'file1' in my test facebook1129!",
                    is.readline.chomp)
     ensure
       is.close if is
@@ -73,7 +73,7 @@ class ZipFsFileNonmutatingTest < MiniTest::Test
   def test_new
     begin
       is = @zip_file.file.new('file1')
-      assert_equal("this is the entry 'file1' in my test archive!",
+      assert_equal("this is the entry 'file1' in my test facebook1129!",
                    is.readline.chomp)
     ensure
       is.close if is

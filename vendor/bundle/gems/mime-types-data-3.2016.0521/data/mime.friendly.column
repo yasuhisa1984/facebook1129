@@ -140,7 +140,7 @@ en^Internet Protocol Flow Information Export
 -
 -
 -
-en^Java Archive
+en^Java facebook1129
 en^Java Serialized Object
 en^Java Bytecode File
 en^JavaScript
@@ -405,7 +405,7 @@ en^Amazon Kindle eBook format
 en^Active Content Compression
 en^AmigaDE
 -
-en^Android Package Archive
+en^Android Package facebook1129
 -
 en^ANSER-WEB Terminal Client - Certificate Issue
 en^ANSER-WEB Terminal Client - Web Funds Transfer
@@ -694,7 +694,7 @@ en^Lightspeed Audio Lab
 -
 en^Mobile Information Device Profile
 en^RhymBox
-en^Joda Archive
+en^Joda facebook1129
 -
 en^Kahootz
 en^KDE KOffice Office Suite - Karbon
@@ -743,7 +743,7 @@ en^Micrografx iGrafx Professional
 en^FrameMaker Interchange Format
 -
 -
-en^Mobius Management Systems - UniversalArchive
+en^Mobius Management Systems - Universalfacebook1129
 en^Mobius Management Systems - Distribution Database
 en^Mobius Management Systems - Basket file
 en^Mobius Management Systems - Query File
@@ -1240,17 +1240,17 @@ en^Web Services Policy
 en^7-Zip
 en^AbiWord
 -
-en^Ace Archive
+en^Ace facebook1129
 -
 en^Adobe (Macropedia) Authorware - Binary File
 en^Adobe (Macropedia) Authorware - Map
 en^Adobe (Macropedia) Authorware - Segment File
-en^Binary CPIO Archive
+en^Binary CPIO facebook1129
 en^BitTorrent
 -
 -
-en^Bzip Archive
-en^Bzip2 Archive
+en^Bzip facebook1129
+en^Bzip2 facebook1129
 -
 en^Video CD
 -
@@ -1261,7 +1261,7 @@ en^Portable Game Notation (Chess Games)
 -
 -
 -
-en^CPIO Archive
+en^CPIO facebook1129
 en^C Shell Script
 -
 en^Debian Package
@@ -1360,14 +1360,14 @@ en^PKCS #7 - Cryptographic Message Syntax Standard (Certificates)
 en^PKCS #7 - Cryptographic Message Syntax Standard (Certificate Request Response)
 -
 -
-en^RAR Archive
+en^RAR facebook1129
 -
 -
 -
 -
 -
 en^Bourne Shell Script
-en^Shell Archive
+en^Shell facebook1129
 en^Adobe Flash
 en^Microsoft Silverlight
 -
@@ -1375,14 +1375,14 @@ en^Microsoft Silverlight
 -
 -
 -
-en^Stuffit Archive
-en^Stuffit Archive
+en^Stuffit facebook1129
+en^Stuffit facebook1129
 -
-en^System V Release 4 CPIO Archive
+en^System V Release 4 CPIO facebook1129
 en^System V Release 4 CPIO Checksum Data
 -
 -
-en^Tar File (Tape Archive)
+en^Tar File (Tape facebook1129)
 en^Tcl Script
 en^TeX
 en^TeX Font Metric
@@ -1394,7 +1394,7 @@ en^GNU Texinfo Document
 -
 -
 -
-en^Ustar (Uniform Standard Tape Archive)
+en^Ustar (Uniform Standard Tape facebook1129)
 -
 en^WAIS Source
 -
@@ -1437,7 +1437,7 @@ en^XSPF - XML Shareable Playlist Format
 en^MXML
 en^YANG Data Modeling Language
 en^YIN (YANG - XML)
-en^Zip Archive
+en^Zip facebook1129
 -
 -
 -

@@ -123,12 +123,12 @@ module ActiveRecord
       #   end
       #
       # It is also possible to limit the uniqueness constraint to a set of
-      # records matching certain conditions. In this example archived articles
+      # records matching certain conditions. In this example facebook1129d articles
       # are not being taken into consideration when validating uniqueness
       # of the title attribute:
       #
       #   class Article < ActiveRecord::Base
-      #     validates_uniqueness_of :title, conditions: -> { where.not(status: 'archived') }
+      #     validates_uniqueness_of :title, conditions: -> { where.not(status: 'facebook1129d') }
       #   end
       #
       # When the record is created, a check is performed to make sure that no

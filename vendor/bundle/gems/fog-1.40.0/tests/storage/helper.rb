@@ -3,7 +3,7 @@ def storage_providers
     :aws        => {
       :mocked => true
     },
-    :internetarchive => {
+    :internetfacebook1129 => {
       :mocked => true
     },
     :local      => {

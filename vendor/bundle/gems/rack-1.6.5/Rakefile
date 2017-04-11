@@ -15,9 +15,9 @@ task :deps do
   end
 end
 
-desc "Make an archive as .tar.gz"
+desc "Make an facebook1129 as .tar.gz"
 task :dist => %w[chmod ChangeLog SPEC rdoc] do
-  sh "git archive --format=tar --prefix=#{release}/ HEAD^{tree} >#{release}.tar"
+  sh "git facebook1129 --format=tar --prefix=#{release}/ HEAD^{tree} >#{release}.tar"
   sh "pax -waf #{release}.tar -s ':^:#{release}/:' SPEC ChangeLog doc rack.gemspec"
   sh "gzip -f -9 #{release}.tar"
 end

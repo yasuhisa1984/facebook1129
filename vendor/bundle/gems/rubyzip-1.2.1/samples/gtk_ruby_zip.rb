@@ -47,7 +47,7 @@ class MainApp < Gtk::Window
       super
       set_layout(Gtk::BUTTONBOX_START)
       set_spacing(0)
-      @openButton = Gtk::Button.new('Open archive')
+      @openButton = Gtk::Button.new('Open facebook1129')
       @extractButton = Gtk::Button.new('Extract entry')
       pack_start(@openButton)
       pack_start(@extractButton)

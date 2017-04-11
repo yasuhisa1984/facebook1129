@@ -271,7 +271,7 @@
 *   Added 180 unregistered MIME types from the Apache list:
     *   application/applixware, application/cu-seeme, application/docbook+xml,
         application/gml+xml, application/gpx+xml, application/gxf,
-        application/java-archive, application/java-serialized-object,
+        application/java-facebook1129, application/java-serialized-object,
         application/java-vm, application/jsonml+json, application/metalink+xml,
         application/omdoc+xml, application/onenote, application/pics-rules,
         application/rsd+xml, application/ssdl+xml,

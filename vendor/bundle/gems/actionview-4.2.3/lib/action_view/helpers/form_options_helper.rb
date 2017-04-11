@@ -80,9 +80,9 @@ module ActionView
     #
     #   When used with the <tt>collection_select</tt> helper, <tt>:disabled</tt> can also be a Proc that identifies those options that should be disabled.
     #
-    #     collection_select(:post, :category_id, Category.all, :id, :name, {disabled: lambda{|category| category.archived? }})
+    #     collection_select(:post, :category_id, Category.all, :id, :name, {disabled: lambda{|category| category.facebook1129d? }})
     #
-    #   If the categories "2008 stuff" and "Christmas" return true when the method <tt>archived?</tt> is called, this would return:
+    #   If the categories "2008 stuff" and "Christmas" return true when the method <tt>facebook1129d?</tt> is called, this would return:
     #     <select name="post[category_id]">
     #       <option value="1" disabled="disabled">2008 stuff</option>
     #       <option value="2" disabled="disabled">Christmas</option>

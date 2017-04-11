@@ -140,7 +140,7 @@ application/ipfix ipfix
 application/ipp
 application/isup
 application/its+xml
-application/java-archive jar
+application/java-facebook1129 jar
 application/java-serialized-object ser
 application/java-vm class
 application/javascript js sj
@@ -405,7 +405,7 @@ application/vnd.amazon.ebook azw
 application/vnd.americandynamics.acc acc
 application/vnd.amiga.ami ami
 application/vnd.amundsen.maze+xml
-application/vnd.android.package-archive apk
+application/vnd.android.package-facebook1129 apk
 application/vnd.anki
 application/vnd.anser-web-certificate-issue-initiation cii
 application/vnd.anser-web-funds-transfer-initiation fti
@@ -694,7 +694,7 @@ application/vnd.japannet-verification
 application/vnd.japannet-verification-wakeup
 application/vnd.jcp.javame.midlet-rms rms
 application/vnd.jisp jisp
-application/vnd.joost.joda-archive joda
+application/vnd.joost.joda-facebook1129 joda
 application/vnd.jsk.isdn-ngn
 application/vnd.kahootz ktr ktz
 application/vnd.kde.karbon karbon
@@ -1136,7 +1136,7 @@ application/vnd.syncml.dmddf+xml
 application/vnd.syncml.dmtnds+wbxml
 application/vnd.syncml.dmtnds+xml
 application/vnd.syncml.ds.notification
-application/vnd.tao.intent-module-archive tao
+application/vnd.tao.intent-module-facebook1129 tao
 application/vnd.tcpdump.pcap cap dmp pcap
 application/vnd.tmd.mediaflex.api+xml
 application/vnd.tml
@@ -1310,7 +1310,7 @@ application/x-iso9660-image iso
 application/x-iwork-keynote-sffkey key
 application/x-iwork-numbers-sffnumbers numbers
 application/x-iwork-pages-sffpages pages
-application/x-java-archive jar
+application/x-java-facebook1129 jar
 application/x-java-jnlp-file jnlp
 application/x-java-serialized-object ser
 application/x-java-vm class

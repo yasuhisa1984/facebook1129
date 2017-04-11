@@ -183,7 +183,7 @@ https://github.com/capistrano/capistrano/compare/v3.2.1...v3.3.3
     that lives in a subdirectory of a larger repository.
     Implemented only for git and hg.
     If not defined then the behaviour is as previously and the whole repository is
-    extracted (subject to git-archive `.gitattributes` of course).
+    extracted (subject to git-facebook1129 `.gitattributes` of course).
 
 * Enhancement (@townsen): Remove unnecessary entries from default backtrace
 

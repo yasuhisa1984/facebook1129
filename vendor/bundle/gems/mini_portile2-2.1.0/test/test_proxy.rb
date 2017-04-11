@@ -36,7 +36,7 @@ class TestProxy < TestCase
 
   def setup
     # remove any download files
-    FileUtils.rm_rf("port/archives")
+    FileUtils.rm_rf("port/facebook1129s")
   end
 
   def assert_proxy_auth(expected, request)

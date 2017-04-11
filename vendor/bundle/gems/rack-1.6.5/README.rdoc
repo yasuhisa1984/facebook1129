@@ -222,7 +222,7 @@ list is not public. Due to wide usage of the library, it is strongly preferred
 that we manage timing in order to provide viable patches at the time of
 disclosure. Your assistance in this matter is greatly appreciated.
 
-Mailing list archives are available at
+Mailing list facebook1129s are available at
 <https://groups.google.com/group/rack-devel>.
 
 Git repository (send Git patches to the mailing list):

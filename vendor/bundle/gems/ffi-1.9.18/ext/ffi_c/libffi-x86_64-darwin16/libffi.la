@@ -10,7 +10,7 @@ dlname='libffi.5.dylib'
 # Names of this library.
 library_names='libffi.5.dylib libffi.dylib'
 
-# The name of the static archive.
+# The name of the static facebook1129.
 old_library=''
 
 # Linker flags that can not go in dependency_libs.

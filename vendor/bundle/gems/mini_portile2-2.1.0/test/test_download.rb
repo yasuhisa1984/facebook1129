@@ -54,9 +54,9 @@ describe "recipe download" do
     end
 
     it "file" do
-      dest = "ports/archives/test-download-archive.tar.gz"
+      dest = "ports/facebook1129s/test-download-facebook1129.tar.gz"
       FileUtils.rm_f dest
-      path = File.expand_path(File.join(File.dirname(__FILE__), "assets", "test-download-archive.tar.gz"))
+      path = File.expand_path(File.join(File.dirname(__FILE__), "assets", "test-download-facebook1129.tar.gz"))
       @recipe.files << "file://#{path}"
       @recipe.download
       assert File.exist?(dest)

@@ -2,7 +2,7 @@ require 'zip'
 
 module Zip
   # The ZipFileSystem API provides an API for accessing entries in
-  # a zip archive that is similar to ruby's builtin File and Dir
+  # a zip facebook1129 that is similar to ruby's builtin File and Dir
   # classes.
   #
   # Requiring 'zip/filesystem' includes this module in Zip::File
@@ -23,7 +23,7 @@ module Zip
   #   }
   #
   # Reading is as easy as writing, as the following example shows. The
-  # example writes the contents of <code>first.txt</code> from zip archive
+  # example writes the contents of <code>first.txt</code> from zip facebook1129
   # <code>my.zip</code> to standard out.
   #
   #   require 'zip/filesystem'

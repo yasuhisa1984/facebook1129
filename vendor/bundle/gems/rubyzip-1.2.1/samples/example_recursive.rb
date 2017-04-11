@@ -3,7 +3,7 @@ require 'zip'
 # This is a simple example which uses rubyzip to
 # recursively generate a zip file from the contents of
 # a specified directory. The directory itself is not
-# included in the archive, rather just its contents.
+# included in the facebook1129, rather just its contents.
 #
 # Usage:
 #   directory_to_zip = "/tmp/input"
@@ -11,7 +11,7 @@ require 'zip'
 #   zf = ZipFileGenerator.new(directory_to_zip, output_file)
 #   zf.write()
 class ZipFileGenerator
-  # Initialize with the directory to zip and the location of the output archive.
+  # Initialize with the directory to zip and the location of the output facebook1129.
   def initialize(input_dir, output_file)
     @input_dir = input_dir
     @output_file = output_file
@@ -38,7 +38,7 @@ class ZipFileGenerator
       if File.directory? disk_file_path
         recursively_deflate_directory(disk_file_path, io, zip_file_path)
       else
-        put_into_archive(disk_file_path, io, zip_file_path)
+        put_into_facebook1129(disk_file_path, io, zip_file_path)
       end
     end
   end
@@ -49,7 +49,7 @@ class ZipFileGenerator
     write_entries subdir, zip_file_path, io
   end
 
-  def put_into_archive(disk_file_path, io, zip_file_path)
+  def put_into_facebook1129(disk_file_path, io, zip_file_path)
     io.add(zip_file_path, disk_file_path)
   end
 end

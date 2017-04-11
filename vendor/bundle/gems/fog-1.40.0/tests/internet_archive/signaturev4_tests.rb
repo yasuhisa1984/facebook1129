@@ -1,9 +1,9 @@
 # encoding: utf-8
 
-Shindo.tests('InternetArchive | signaturev4', ['internetarchive']) do
+Shindo.tests('Internetfacebook1129 | signaturev4', ['internetfacebook1129']) do
 
   # These testcases are from http://docs.amazonwebservices.com/general/latest/gr/signature-v4-test-suite.html
-  @signer = Fog::InternetArchive::SignatureV4.new('AKIDEXAMPLE', 'wJalrXUtnFEMI/K7MDENG+bPxRfiCYEXAMPLEKEY', 'us-east-1','host')
+  @signer = Fog::Internetfacebook1129::SignatureV4.new('AKIDEXAMPLE', 'wJalrXUtnFEMI/K7MDENG+bPxRfiCYEXAMPLEKEY', 'us-east-1','host')
 
   Fog::Time.now = ::Time.utc(2011,9,9,23,36,0)
 

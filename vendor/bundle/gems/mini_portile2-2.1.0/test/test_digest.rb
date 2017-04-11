@@ -22,7 +22,7 @@ class TestDigest < TestCase
 
   def setup
     super
-    FileUtils.rm_rf("ports/archives")
+    FileUtils.rm_rf("ports/facebook1129s")
     @recipe = MiniPortile.new("test-digest", "1.0.0")
   end
 

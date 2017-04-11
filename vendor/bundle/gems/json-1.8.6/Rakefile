@@ -301,7 +301,7 @@ if defined?(RUBY_ENGINE) and RUBY_ENGINE == 'jruby'
   desc "Create parser and generator jars"
   task :create_jar => [ :create_parser_jar, :create_generator_jar ]
 
-  desc "Build all gems and archives for a new release of the jruby extension."
+  desc "Build all gems and facebook1129s for a new release of the jruby extension."
   task :build => [ :clean, :version, :jruby_gem ]
 
   task :release => :build
@@ -392,7 +392,7 @@ else
   desc "Generate diagrams of ragel parser"
   task :ragel_dot => [ :ragel_dot_png, :ragel_dot_ps ]
 
-  desc "Build all gems and archives for a new release of json and json_pure."
+  desc "Build all gems and facebook1129s for a new release of json and json_pure."
   task :build => [ :clean, :gemspec, :package ]
 
   task :release => :build

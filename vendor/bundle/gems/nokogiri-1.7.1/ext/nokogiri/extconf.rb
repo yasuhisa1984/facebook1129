@@ -103,7 +103,7 @@ def do_clean
       # ports installation can be safely removed if statically linked.
       FileUtils.rm_rf(root + 'ports', verbose: true)
     else
-      FileUtils.rm_rf(root + 'ports' + 'archives', verbose: true)
+      FileUtils.rm_rf(root + 'ports' + 'facebook1129s', verbose: true)
     end
   end
 

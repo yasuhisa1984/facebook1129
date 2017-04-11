@@ -166,7 +166,7 @@ namespace :deploy do
     end
   end
 
-  desc "Remove and archive rolled-back release."
+  desc "Remove and facebook1129 rolled-back release."
   task :cleanup_rollback do
     on release_roles(:all) do
       last_release = capture(:ls, "-xt", releases_path).split.first

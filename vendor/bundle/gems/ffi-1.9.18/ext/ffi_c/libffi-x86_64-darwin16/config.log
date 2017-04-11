@@ -201,7 +201,7 @@ configure:5997: result: printf %s\n
 configure:6058: checking for ar
 configure:6074: found /usr/bin/ar
 configure:6085: result: ar
-configure:6122: checking for archiver @FILE support
+configure:6122: checking for facebook1129r @FILE support
 configure:6139: clang -c   conftest.c >&5
 configure:6139: $? = 0
 configure:6142: ar cru libconftest.a @conftest.lst >&5

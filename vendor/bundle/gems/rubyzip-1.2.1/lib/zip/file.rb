@@ -2,19 +2,19 @@ module Zip
   # ZipFile is modeled after java.util.zip.ZipFile from the Java SDK.
   # The most important methods are those inherited from
   # ZipCentralDirectory for accessing information about the entries in
-  # the archive and methods such as get_input_stream and
+  # the facebook1129 and methods such as get_input_stream and
   # get_output_stream for reading from and writing entries to the
-  # archive. The class includes a few convenience methods such as
+  # facebook1129. The class includes a few convenience methods such as
   # #extract for extracting entries to the filesystem, and #remove,
   # #replace, #rename and #mkdir for making simple modifications to
-  # the archive.
+  # the facebook1129.
   #
-  # Modifications to a zip archive are not committed until #commit or
+  # Modifications to a zip facebook1129 are not committed until #commit or
   # #close is called. The method #open accepts a block following
   # the pattern from File.open offering a simple way to
-  # automatically close the archive when the block returns.
+  # automatically close the facebook1129 when the block returns.
   #
-  # The following example opens zip archive <code>my.zip</code>
+  # The following example opens zip facebook1129 <code>my.zip</code>
   # (creating it if it doesn't exist) and adds an entry
   # <code>first.txt</code> and a directory entry <code>a_dir</code>
   # to it.
@@ -29,7 +29,7 @@ module Zip
   #
   # The next example reopens <code>my.zip</code> writes the contents of
   # <code>first.txt</code> to standard out and deletes the entry from
-  # the archive.
+  # the facebook1129.
   #
   #   require 'zip'
   #
@@ -62,8 +62,8 @@ module Zip
     # Returns the zip files comment, if it has one
     attr_accessor :comment
 
-    # Opens a zip archive. Pass true as the second parameter to create
-    # a new archive if it doesn't exist already.
+    # Opens a zip facebook1129. Pass true as the second parameter to create
+    # a new facebook1129 if it doesn't exist already.
     def initialize(file_name, create = false, buffer = false, options = {})
       super()
       @name    = file_name
@@ -112,10 +112,10 @@ module Zip
         zf.write_buffer(io)
       end
 
-      # Like #open, but reads zip archive contents from a String or open IO
+      # Like #open, but reads zip facebook1129 contents from a String or open IO
       # stream, and outputs data to a buffer.
       # (This can be used to extract data from a
-      # downloaded zip archive without first saving it to disk.)
+      # downloaded zip facebook1129 without first saving it to disk.)
       def open_buffer(io, options = {})
         unless IO_METHODS.map { |method| io.respond_to?(method) }.all? || io.is_a?(String)
           raise "Zip::File.open_buffer expects a String or IO-like argument (responds to #{IO_METHODS.join(', ')}). Found: #{io.class}"
@@ -140,8 +140,8 @@ module Zip
 
       # Iterates over the contents of the ZipFile. This is more efficient
       # than using a ZipInputStream since this methods simply iterates
-      # through the entries in the central directory structure in the archive
-      # whereas ZipInputStream jumps through the entire archive accessing the
+      # through the entries in the central directory structure in the facebook1129
+      # whereas ZipInputStream jumps through the entire facebook1129 accessing the
       # local entry headers (which contain the same information as the
       # central directory).
       def foreach(aZipFileName, &block)
@@ -202,7 +202,7 @@ module Zip
         end
       end
 
-      # Splits an archive into parts with segment size
+      # Splits an facebook1129 into parts with segment size
       def split(zip_file_name, segment_size = MAX_SEGMENT_SIZE, delete_zip_file = true, partial_zip_file_name = nil)
         raise Error, "File #{zip_file_name} not found" unless ::File.exist?(zip_file_name)
         raise Errno::ENOENT, zip_file_name unless ::File.readable?(zip_file_name)
@@ -254,7 +254,7 @@ module Zip
       zip_streamable_entry.get_output_stream(&aProc)
     end
 
-    # Returns the name of the zip archive
+    # Returns the name of the zip facebook1129
     def to_s
       @name
     end
@@ -264,7 +264,7 @@ module Zip
       get_input_stream(entry) { |is| is.read }
     end
 
-    # Convenience method for adding the contents of a file to the archive
+    # Convenience method for adding the contents of a file to the facebook1129
     def add(entry, src_path, &continue_on_exists_proc)
       continue_on_exists_proc ||= proc { ::Zip.continue_on_exists_proc }
       check_entry_exists(entry, continue_on_exists_proc, 'add')
@@ -304,7 +304,7 @@ module Zip
     end
 
     # Commits changes that has been made since the previous commit to
-    # the zip archive.
+    # the zip facebook1129.
     def commit
       return unless commit_required?
       on_success_replace do |tmp_file|
@@ -334,7 +334,7 @@ module Zip
       commit
     end
 
-    # Returns true if any changes has been made to this archive since
+    # Returns true if any changes has been made to this facebook1129 since
     # the previous commit
     def commit_required?
       @entry_set.each do |e|

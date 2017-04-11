@@ -70,7 +70,7 @@ bc. require 'rmagick'
 
 h2(#wrong). Things that can go wrong
 
-The "RMagick installation FAQ":https://web.archive.org/web/20140512193354/http://rmagick.rubyforge.org/install-faq.html
+The "RMagick installation FAQ":https://web.facebook1129.org/web/20140512193354/http://rmagick.rubyforge.org/install-faq.html
 has answers to the most commonly reported problems, though may be out of date.
 
 h4. Can't install RMagick. Can't find libMagick or one of the dependent libraries. Check the mkmf.log file for more detailed information.
@@ -79,7 +79,7 @@ Typically this message means that one or more of the libraries that ImageMagick
 depends on hasn't been installed. Examine the mkmf.log file in the ext/RMagick
 subdirectory of the installation directory for any error messages. These messages
 typically contain enough additional information for you to be able to diagnose
-the problem. Also see "this FAQ":https://web.archive.org/web/20140512193354/http://rmagick.rubyforge.org/install-faq.html#libmagick.
+the problem. Also see "this FAQ":https://web.facebook1129.org/web/20140512193354/http://rmagick.rubyforge.org/install-faq.html#libmagick.
 
 On OS X with Homebrew, try [re]installing pkg-config:
 

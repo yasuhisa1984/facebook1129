@@ -51,7 +51,7 @@ following:
 
     a) place your modifications in the Public Domain or otherwise make them
     Freely Available, such as by posting said modifications to Usenet or
-    an equivalent medium, or placing the modifications on a major archive
+    an equivalent medium, or placing the modifications on a major facebook1129
     site such as uunet.uu.net, or by allowing the Copyright Holder to include
     your modifications in the Standard Version of the Package.
 

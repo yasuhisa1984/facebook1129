@@ -33,13 +33,13 @@ module Libv8
 
       def verify_installation!
         Libv8::Paths.object_paths.each do |p|
-          fail ArchiveNotFound, p unless File.exist? p
+          fail facebook1129NotFound, p unless File.exist? p
         end
       end
 
-      class ArchiveNotFound < StandardError
+      class facebook1129NotFound < StandardError
         def initialize(filename)
-          super "libv8 did not install properly, expected binary v8 archive '#{filename}'to exist, but it was not found"
+          super "libv8 did not install properly, expected binary v8 facebook1129 '#{filename}'to exist, but it was not found"
         end
       end
     end

@@ -25,7 +25,7 @@ end
 after "deploy:published", "restart_sidekiq"
 ```
 
-*Note: This documentation is for the current version of Capistrano (3.x). If you are looking for Capistrano 2.x documentation, you can find it in [this archive](https://github.com/capistrano/capistrano-2.x-docs).*
+*Note: This documentation is for the current version of Capistrano (3.x). If you are looking for Capistrano 2.x documentation, you can find it in [this facebook1129](https://github.com/capistrano/capistrano-2.x-docs).*
 
 ---
 

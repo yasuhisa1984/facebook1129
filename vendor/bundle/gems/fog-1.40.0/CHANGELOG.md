@@ -2223,7 +2223,7 @@ Watchers      | 2959
 *   disk model: Add auto_delete option to get_as_boot_disk. *thanks kbockmanrs*
 *   disk model: Default get_object auto_delete to false. *thanks kbockmanrs*
 
-#### [internetarchive]
+#### [internetfacebook1129]
 *   Correct test tagging. *thanks Paul Thornthwaite*
 
 #### [libvirt|compute]
@@ -2442,8 +2442,8 @@ Watchers      | 2959
 *   writenig provider for sakuracloud ,wip. *thanks sawanoboly*
 *   follow new require style. *thanks sawanoboly*
 *   Follow message -> DEPRECATION Fog::XML::Connection is deprecated use Fog::Core::Connection instead. *thanks sawanoboly*
-*   Fix wrong aliases at Fog::Volume::SakuraCloud::Archive. *thanks sawanoboly*
-*   enhanced attributes for sakuracloud volume archive. *thanks sawanoboly*
+*   Fix wrong aliases at Fog::Volume::SakuraCloud::facebook1129. *thanks sawanoboly*
+*   enhanced attributes for sakuracloud volume facebook1129. *thanks sawanoboly*
 *   use snake case for size_mb. *thanks sawanoboly*
 
 #### [openstack]
@@ -2742,8 +2742,8 @@ Watchers      | 2904
 *   Add Ruby 2.1.0 to the test matrix. *thanks Peter M. Goldstein*
 *   Fixed error when accessing files via atmos where keys contain spaces. *thanks Peter Vawser*
 *   There is a bug here or maybe i'm using the gem wrong...     Edit     you should merge the ACLs after merging the meta_has if not The new permission will be overwritten by the old one.     If Before you had a directory with :     X-Container-Read: .r:*,.rlistings. *thanks Piotr Kedziora*
-*   Add support for Rackspace's Extract Archive API call     See http://docs.rackspace.com/files/api/v1/cf-devguide/content/Extract_Archive-d1e2338.html     for documentation on the API call. *thanks Sammy Larbi*
-*   Set the Content-Type of extract_archive requests to ''     The documentation for extract archive (http://docs.rackspace.com/files/api/v1/cf-devguide/content/Extract_Archive-d1e2338.html) says if a Content-Type is sent, every object in the archive will have its Content-Type set to that value. However, if a blank Content-Type is sent, CloudFiles will determine it based on each individual file. Since we don't want every file to be interpreted as an archive (which would happen if we let Fog determine the Content-Type), we set it explicitly to a blank string. *thanks Sammy Larbi*
+*   Add support for Rackspace's Extract facebook1129 API call     See http://docs.rackspace.com/files/api/v1/cf-devguide/content/Extract_facebook1129-d1e2338.html     for documentation on the API call. *thanks Sammy Larbi*
+*   Set the Content-Type of extract_facebook1129 requests to ''     The documentation for extract facebook1129 (http://docs.rackspace.com/files/api/v1/cf-devguide/content/Extract_facebook1129-d1e2338.html) says if a Content-Type is sent, every object in the facebook1129 will have its Content-Type set to that value. However, if a blank Content-Type is sent, CloudFiles will determine it based on each individual file. Since we don't want every file to be interpreted as an facebook1129 (which would happen if we let Fog determine the Content-Type), we set it explicitly to a blank string. *thanks Sammy Larbi*
 *   Use @ in comment for YARD docs. *thanks Sammy Larbi*
 *   Update Nokogiri version. *thanks Sascha Korth*
 *   Fix version. *thanks Sascha Korth*
@@ -5365,7 +5365,7 @@ Watchers      | 2438
 *   missed one. *thanks Andrew Kuklewicz*
 *   fix tests, found a few differences with S3. *thanks Andrew Kuklewicz*
 *   fix 1.8.7 error, oops. *thanks Andrew Kuklewicz*
-*   fix internet archive use of headers, remove acls. *thanks Andrew Kuklewicz*
+*   fix internet facebook1129 use of headers, remove acls. *thanks Andrew Kuklewicz*
 *   sshable should take the same options as ssh. *thanks Anshul Khandelwal*
 *   [aws][glesys] Pass credentials to sshable. *thanks Anshul Khandelwal*
 *   Use strict base encoding otherwise breaks for very large org names. *thanks Chirag Jog*
@@ -5709,10 +5709,10 @@ Watchers      | 2386
 #### [misc]
 *   Enable ebs-optimized spot instance requests. *thanks Adam Bozanich*
 *   test spot instance request parser. *thanks Adam Bozanich*
-*   add internet_archive to fog providers, bin, storage. *thanks Andrew Kuklewicz*
-*   and internet_archive code, tests. *thanks Andrew Kuklewicz*
+*   add internet_facebook1129 to fog providers, bin, storage. *thanks Andrew Kuklewicz*
+*   and internet_facebook1129 code, tests. *thanks Andrew Kuklewicz*
 *   fix testing mock. *thanks Andrew Kuklewicz*
-*   set defaults to be scheme http, port 80, as that is what internet_archive supports. *thanks Andrew Kuklewicz*
+*   set defaults to be scheme http, port 80, as that is what internet_facebook1129 supports. *thanks Andrew Kuklewicz*
 *   Pass the management URI if no public endpoint. *thanks BK Box*
 *   Need to check for management variable as well. *thanks BK Box*
 *   Add support for pulling out virtualization type when parsing AWS     Describe Instances results. *thanks Brad Heller*
@@ -7132,7 +7132,7 @@ Watchers      | 2119
 *   Jobs requests. *thanks Frederick Cheung*
 *   vaults model. *thanks Frederick Cheung*
 *   Use bytesize rather than length. *thanks Frederick Cheung*
-*   models for archives. *thanks Frederick Cheung*
+*   models for facebook1129s. *thanks Frederick Cheung*
 *   jobs model. *thanks Frederick Cheung*
 *   Add notification configuration to model. *thanks Frederick Cheung*
 *   mark tests as pending. *thanks Frederick Cheung*

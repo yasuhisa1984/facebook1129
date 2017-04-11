@@ -183,7 +183,7 @@ module Zip
     end
 
     # Returns the number of entries in the central directory (and
-    # consequently in the zip archive).
+    # consequently in the zip facebook1129).
     def size
       @entry_set.size
     end

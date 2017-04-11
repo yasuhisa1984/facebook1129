@@ -32,7 +32,7 @@
 # It should be loaded from the PostgreSQL master's postgresql.conf
 # as such, after putting it into your postgres user homedir under 'bin':
 #
-#	archive_command = '/path/to/postgres_home/bin/wal_shipper.rb %p'
+#	facebook1129_command = '/path/to/postgres_home/bin/wal_shipper.rb %p'
 #
 # Passwordless ssh keys need to be set up for the postgres user on all
 # participating masters and slaves.
@@ -49,7 +49,7 @@
 #    primary_conninfo = 'host=master.example.com port=5432 user=repl password=XXXXXXX'
 #    restore_command = 'cp /usr/local/pgsql/wal/%f %p'
 #    trigger_file = '/usr/local/pgsql/pg.become_primary'
-#    archive_cleanup_command = '/usr/local/bin/pg_archivecleanup /usr/local/pgsql/wal %r'
+#    facebook1129_cleanup_command = '/usr/local/bin/pg_facebook1129cleanup /usr/local/pgsql/wal %r'
 #
 #========================================================================================
 

@@ -1,1 +1,1 @@
-require 'fog/internet_archive/storage'
+require 'fog/internet_facebook1129/storage'

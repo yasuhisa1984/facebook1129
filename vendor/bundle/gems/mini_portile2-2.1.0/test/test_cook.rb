@@ -40,7 +40,7 @@ class TestCook < TestCase
   end
 
   def test_download
-    download = "ports/archives/test%20mini%20portile-1.0.0.tar.gz"
+    download = "ports/facebook1129s/test%20mini%20portile-1.0.0.tar.gz"
     assert File.exist?(download), download
   end
 

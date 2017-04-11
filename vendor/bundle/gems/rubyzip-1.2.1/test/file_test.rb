@@ -140,7 +140,7 @@ class ZipFileTest < MiniTest::Test
                                 zfRead.get_input_stream(entryName) { |zis| zis.read })
   end
 
-  def test_recover_permissions_after_add_files_to_archive
+  def test_recover_permissions_after_add_files_to_facebook1129
     srcZip = TEST_ZIP.zip_name
     ::File.chmod(0664, srcZip)
     srcFile = 'test/data/file2.txt'

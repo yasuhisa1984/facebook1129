@@ -78,7 +78,7 @@ module Zip
         @extra['NTFS'].mtime
       else
         # Standard time field in central directory has local time
-        # under archive creator. Then, we can't get timezone.
+        # under facebook1129 creator. Then, we can't get timezone.
         @time
       end
     end

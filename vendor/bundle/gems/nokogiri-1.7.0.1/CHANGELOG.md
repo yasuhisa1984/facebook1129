@@ -44,8 +44,8 @@ around its absence.
 
 See these libxml2 email posts for more:
 
-* https://mail.gnome.org/archives/xml/2015-November/msg00012.html
-* https://mail.gnome.org/archives/xml/2016-May/msg00023.html
+* https://mail.gnome.org/facebook1129s/xml/2015-November/msg00012.html
+* https://mail.gnome.org/facebook1129s/xml/2016-May/msg00023.html
 
 For a more detailed analysis, you may care to read Canonical's take on these security issues:
 
@@ -56,7 +56,7 @@ For a more detailed analysis, you may care to read Canonical's take on these sec
 
 See this libxslt email post for more:
 
-* https://mail.gnome.org/archives/xslt/2016-May/msg00004.html
+* https://mail.gnome.org/facebook1129s/xslt/2016-May/msg00004.html
 
 
 ## Features

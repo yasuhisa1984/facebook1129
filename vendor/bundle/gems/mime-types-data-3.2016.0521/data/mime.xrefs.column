@@ -694,7 +694,7 @@ person^Jun_Yoshitake|template^application/vnd.japannet-verification
 person^Kiyofusa_Fujii|template^application/vnd.japannet-verification-wakeup
 person^Mikhail_Gorshenev|template^application/vnd.jcp.javame.midlet-rms
 person^Sebastiaan_Deckers|template^application/vnd.jisp
-person^Joost|template^application/vnd.joost.joda-archive
+person^Joost|template^application/vnd.joost.joda-facebook1129
 person^Yokoyama_Kiyonobu|template^application/vnd.jsk.isdn-ngn
 person^Tim_Macdonald|template^application/vnd.kahootz
 person^David_Faure|template^application/vnd.kde.karbon
@@ -1136,7 +1136,7 @@ person^OMA-DM_Work_Group|template^application/vnd.syncml.dmddf+xml
 person^OMA-DM_Work_Group|template^application/vnd.syncml.dmtnds+wbxml
 person^OMA-DM_Work_Group|template^application/vnd.syncml.dmtnds+xml
 person^OMA_Data_Synchronization_Working_Group|template^application/vnd.syncml.ds.notification
-person^Daniel_Shelton|template^application/vnd.tao.intent-module-archive
+person^Daniel_Shelton|template^application/vnd.tao.intent-module-facebook1129
 person^Glen_Turner^Guy_Harris|template^application/vnd.tcpdump.pcap
 person^Alex_Sibilev|template^application/vnd.tmd.mediaflex.api+xml
 person^Joey_Smith|template^application/vnd.tml
@@ -1768,7 +1768,7 @@ rfc^rfc5545|template^text/calendar
 -
 rfc^rfc2318|template^text/css
 rfc^rfc4180^rfc7111|template^text/csv
-person^David_Underdown^National_Archives_UK|template^text/csv-schema
+person^David_Underdown^National_facebook1129s_UK|template^text/csv-schema
 notes^- DEPRECATED by RFC6350|rfc^rfc2425^rfc6350|template^text/directory
 rfc^rfc4027|template^text/dns
 notes^- OBSOLETED in favor of application/ecmascript|rfc^rfc4329|template^text/ecmascript

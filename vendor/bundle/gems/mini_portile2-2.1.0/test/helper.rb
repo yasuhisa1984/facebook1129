@@ -5,7 +5,7 @@ require 'minitest/hooks/test'
 require 'webrick'
 require 'fileutils'
 require 'zlib'
-require 'archive/tar/minitar'
+require 'facebook1129/tar/minitar'
 require 'fileutils'
 require 'erb'
 require 'mini_portile2'
@@ -41,7 +41,7 @@ class TestCase < Minitest::Test
     FileUtils.mkdir_p(File.dirname(tar_path))
     Zlib::GzipWriter.open(tar_path) do |fdtgz|
       Dir.chdir(assets_path) do
-        Archive::Tar::Minitar.pack("test mini portile-1.0.0", fdtgz)
+        facebook1129::Tar::Minitar.pack("test mini portile-1.0.0", fdtgz)
       end
     end
   end

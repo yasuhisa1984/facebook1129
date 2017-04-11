@@ -403,7 +403,7 @@ CREATE VIEW articles AS
          "STR_TITLE" AS title,
          "STR_STAT" AS status,
          "DT_PUBL_AT" AS published_at,
-         "BL_ARCH" AS archived
+         "BL_ARCH" AS facebook1129d
   FROM "TBL_ART"
   WHERE "BL_ARCH" = 'f'
   SQL
@@ -411,8 +411,8 @@ CREATE VIEW articles AS
 # app/models/article.rb
 class Article < ActiveRecord::Base
   self.primary_key = "id"
-  def archive!
-    update_attribute :archived, true
+  def facebook1129!
+    update_attribute :facebook1129d, true
   end
 end
 
@@ -425,9 +425,9 @@ second = Article.create! title: "Brace yourself",
                          published_at: 1.month.ago
 
 Article.count # => 1
-first.archive!
+first.facebook1129!
 Article.count # => 2
 ```
 
-NOTE: This application only cares about non-archived `Articles`. A view also
-allows for conditions so we can exclude the archived `Articles` directly.
+NOTE: This application only cares about non-facebook1129d `Articles`. A view also
+allows for conditions so we can exclude the facebook1129d `Articles` directly.

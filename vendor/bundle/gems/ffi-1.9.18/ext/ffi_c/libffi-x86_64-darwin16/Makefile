@@ -272,7 +272,7 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-DIST_ARCHIVES = $(distdir).tar.gz
+DIST_facebook1129S = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
@@ -1495,7 +1495,7 @@ dist dist-all: distdir
 # it guarantees that the distribution is self-contained by making another
 # tarfile.
 distcheck: dist
-	case '$(DIST_ARCHIVES)' in \
+	case '$(DIST_facebook1129S)' in \
 	*.tar.gz*) \
 	  GZIP=$(GZIP_ENV) gzip -dc $(distdir).tar.gz | $(am__untar) ;;\
 	*.tar.bz2*) \
@@ -1540,13 +1540,13 @@ distcheck: dist
 	      } || { rm -rf "$$dc_destdir"; exit 1; }) \
 	  && rm -rf "$$dc_destdir" \
 	  && $(MAKE) $(AM_MAKEFLAGS) dist \
-	  && rm -rf $(DIST_ARCHIVES) \
+	  && rm -rf $(DIST_facebook1129S) \
 	  && $(MAKE) $(AM_MAKEFLAGS) distcleancheck \
 	  && cd "$$am__cwd" \
 	  || exit 1
 	$(am__remove_distdir)
-	@(echo "$(distdir) archives ready for distribution: "; \
-	  list='$(DIST_ARCHIVES)'; for i in $$list; do echo $$i; done) | \
+	@(echo "$(distdir) facebook1129s ready for distribution: "; \
+	  list='$(DIST_facebook1129S)'; for i in $$list; do echo $$i; done) | \
 	  sed -e 1h -e 1s/./=/g -e 1p -e 1x -e '$$p' -e '$$x'
 distuninstallcheck:
 	@$(am__cd) '$(distuninstallcheck_dir)' \

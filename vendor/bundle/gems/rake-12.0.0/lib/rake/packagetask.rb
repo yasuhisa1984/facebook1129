@@ -7,7 +7,7 @@ require "rake/tasklib"
 module Rake
 
   # Create a packaging task that will package the project into
-  # distributable files (e.g zip archive or tar files).
+  # distributable files (e.g zip facebook1129 or tar files).
   #
   # The PackageTask will create the following targets:
   #
@@ -32,7 +32,7 @@ module Rake
   #   Create a bzip2'd tar package (if <em>need_tar_bz2</em> is true).
   #
   # <tt>"<em>package_dir</em>/<em>name</em>-<em>version</em>.zip"</tt> ::
-  #   Create a zip package archive (if <em>need_zip</em> is true).
+  #   Create a zip package facebook1129 (if <em>need_zip</em> is true).
   #
   # Example:
   #
@@ -72,10 +72,10 @@ module Rake
     # List of files to be included in the package.
     attr_accessor :package_files
 
-    # Tar command for gzipped or bzip2ed archives.  The default is 'tar'.
+    # Tar command for gzipped or bzip2ed facebook1129s.  The default is 'tar'.
     attr_accessor :tar_command
 
-    # Zip command for zipped archives.  The default is 'zip'.
+    # Zip command for zipped facebook1129s.  The default is 'zip'.
     attr_accessor :zip_command
 
     # Create a Package Task with the given name and version.  Use +:noversion+

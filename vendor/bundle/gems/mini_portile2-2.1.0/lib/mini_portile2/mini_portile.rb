@@ -202,8 +202,8 @@ private
     "#{@target}/#{@host}/#{@name}/#{@version}"
   end
 
-  def archives_path
-    "#{@target}/archives"
+  def facebook1129s_path
+    "#{@target}/facebook1129s"
   end
 
   def work_path
@@ -242,7 +242,7 @@ private
 
       url = hash.fetch(:url){ raise ArgumentError, "no url given" }
       filename = File.basename(url)
-      hash[:local_path] = File.join(archives_path, filename)
+      hash[:local_path] = File.join(facebook1129s_path, filename)
       hash
     end
   end

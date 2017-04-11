@@ -92,7 +92,7 @@ Take the above example, and let's draw some picture:
 ```
 mylib
   |-- ports
-  |   |-- archives
+  |   |-- facebook1129s
   |   |   `-- libiconv-1.13.1.tar.gz
   |   `-- <platform>
   |       `-- libiconv
@@ -114,7 +114,7 @@ that result from the compilation process. The library is versioned so
 you can keep multiple versions around on disk without clobbering
 anything.
 
-`archives` is where downloaded source files are cached. It is
+`facebook1129s` is where downloaded source files are cached. It is
 recommended you avoid trashing that folder to avoid downloading the
 same file multiple times (save bandwidth, save the world).
 

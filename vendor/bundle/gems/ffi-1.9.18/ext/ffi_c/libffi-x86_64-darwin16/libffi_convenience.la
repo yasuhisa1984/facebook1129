@@ -10,7 +10,7 @@ dlname=''
 # Names of this library.
 library_names=''
 
-# The name of the static archive.
+# The name of the static facebook1129.
 old_library='libffi_convenience.a'
 
 # Linker flags that can not go in dependency_libs.

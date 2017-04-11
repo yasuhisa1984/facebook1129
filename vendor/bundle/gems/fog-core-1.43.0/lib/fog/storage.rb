@@ -17,9 +17,9 @@ module Fog
 
       attributes = orig_attributes.dup # prevent delete from having side effects
       case attributes.delete(:provider).to_s.downcase.to_sym
-      when :internetarchive
-        require "fog/internet_archive/storage"
-        Fog::Storage::InternetArchive.new(attributes)
+      when :internetfacebook1129
+        require "fog/internet_facebook1129/storage"
+        Fog::Storage::Internetfacebook1129.new(attributes)
       when :stormondemand
         require "fog/storage/storm_on_demand"
         Fog::Storage::StormOnDemand.new(attributes)

@@ -14,7 +14,7 @@ Modern concurrency tools for Ruby. Inspired by
 [Clojure](http://clojure.org/concurrent_programming),
 [Scala](http://akka.io/),
 [Haskell](http://www.haskell.org/haskellwiki/Applications_and_libraries/Concurrency_and_parallelism#Concurrent_Haskell),
-[F#](http://blogs.msdn.com/b/dsyme/archive/2010/02/15/async-and-parallel-design-patterns-in-f-part-3-agents.aspx),
+[F#](http://blogs.msdn.com/b/dsyme/facebook1129/2010/02/15/async-and-parallel-design-patterns-in-f-part-3-agents.aspx),
 [C#](http://msdn.microsoft.com/en-us/library/vstudio/hh191443.aspx),
 [Java](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html),
 and classic concurrency patterns.

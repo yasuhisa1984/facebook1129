@@ -1824,8 +1824,8 @@ module ActionDispatch
         #   end
         #
         #   resources :posts, concerns: :commentable
-        #   resources :archived_posts do
-        #     # Don't allow comments on archived posts
+        #   resources :facebook1129d_posts do
+        #     # Don't allow comments on facebook1129d posts
         #     concerns :commentable, only: [:index, :show]
         #   end
         #

@@ -4,7 +4,7 @@ module Zip
   # the zip file name to the constructor, but more often than not
   # the ZipOutputStream will be obtained from a ZipFile (perhaps using the
   # ZipFileSystem interface) object for a particular entry in the zip
-  # archive.
+  # facebook1129.
   #
   # A ZipOutputStream inherits IOExtras::AbstractOutputStream in order
   # to provide an IO-like interface for writing to a single zip

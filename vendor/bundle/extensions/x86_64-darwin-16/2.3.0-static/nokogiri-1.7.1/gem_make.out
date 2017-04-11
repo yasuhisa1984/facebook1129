@@ -95,7 +95,7 @@ rb_data_object_get(VALUE obj)
 2 warnings generated.
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
-rm -rf /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/nokogiri-1.7.1/ports/archives
+rm -rf /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/nokogiri-1.7.1/ports/facebook1129s
 
 current directory: /Users/penmouse275/workspace/facebook1129/vendor/bundle/gems/nokogiri-1.7.1/ext/nokogiri
 make "DESTDIR=" install

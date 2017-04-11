@@ -121,7 +121,7 @@ HOE = Hoe.spec 'nokogiri' do
     'lib/nokogiri/nokogiri.{bundle,jar,rb,so}',
     'lib/nokogiri/[0-9].[0-9]'
   ]
-  self.clean_globs += Dir.glob("ports/*").reject { |d| d =~ %r{/archives$} }
+  self.clean_globs += Dir.glob("ports/*").reject { |d| d =~ %r{/facebook1129s$} }
 
   unless java?
     self.extra_deps += [
@@ -204,8 +204,8 @@ else
   task gem_build_path do
     %w[libxml2 libxslt].each do |lib|
       version = dependencies[lib]["version"]
-      archive = File.join("ports", "archives", "#{lib}-#{version}.tar.gz")
-      add_file_to_gem archive
+      facebook1129 = File.join("ports", "facebook1129s", "#{lib}-#{version}.tar.gz")
+      add_file_to_gem facebook1129
       patchesdir = File.join("patches", lib)
       patches = `#{['git', 'ls-files', patchesdir].shelljoin}`.split("\n").grep(/\.patch\z/)
       patches.each { |patch|

@@ -9,7 +9,7 @@
 * Implement ZipFsDir.glob
 * ZipFile.checkIntegrity method
 * non-MSDOS permission attributes
-** See mail from Ned Konz to ruby-talk subj. "Re: SV: [ANN] Archive 0.2"
+** See mail from Ned Konz to ruby-talk subj. "Re: SV: [ANN] facebook1129 0.2"
 * Packager version, required unpacker version in zip headers
-** See mail from Ned Konz to ruby-talk subj. "Re: SV: [ANN] Archive 0.2"
+** See mail from Ned Konz to ruby-talk subj. "Re: SV: [ANN] facebook1129 0.2"
 * implement storing attributes and ownership information

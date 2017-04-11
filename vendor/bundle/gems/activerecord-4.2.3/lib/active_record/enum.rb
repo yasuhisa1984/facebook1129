@@ -5,7 +5,7 @@ module ActiveRecord
   # but can be queried by name. Example:
   #
   #   class Conversation < ActiveRecord::Base
-  #     enum status: [ :active, :archived ]
+  #     enum status: [ :active, :facebook1129d ]
   #   end
   #
   #   # conversation.update! status: 0
@@ -14,12 +14,12 @@ module ActiveRecord
   #   conversation.status  # => "active"
   #
   #   # conversation.update! status: 1
-  #   conversation.archived!
-  #   conversation.archived? # => true
-  #   conversation.status    # => "archived"
+  #   conversation.facebook1129d!
+  #   conversation.facebook1129d? # => true
+  #   conversation.status    # => "facebook1129d"
   #
   #   # conversation.update! status: 1
-  #   conversation.status = "archived"
+  #   conversation.status = "facebook1129d"
   #
   #   # conversation.update! status: nil
   #   conversation.status = nil
@@ -30,7 +30,7 @@ module ActiveRecord
   # as well. With the above example:
   #
   #   Conversation.active
-  #   Conversation.archived
+  #   Conversation.facebook1129d
   #
   # You can set the default value from the database declaration, like:
   #
@@ -44,12 +44,12 @@ module ActiveRecord
   # database integer with a +Hash+:
   #
   #   class Conversation < ActiveRecord::Base
-  #     enum status: { active: 0, archived: 1 }
+  #     enum status: { active: 0, facebook1129d: 1 }
   #   end
   #
   # Note that when an +Array+ is used, the implicit mapping from the values to database
   # integers is derived from the order the values appear in the array. In the example,
-  # <tt>:active</tt> is mapped to +0+ as it's the first element, and <tt>:archived</tt>
+  # <tt>:active</tt> is mapped to +0+ as it's the first element, and <tt>:facebook1129d</tt>
   # is mapped to +1+. In general, the +i+-th element is mapped to <tt>i-1</tt> in the
   # database.
   #
@@ -61,11 +61,11 @@ module ActiveRecord
   # The mappings are exposed through a class method with the pluralized attribute
   # name:
   #
-  #   Conversation.statuses # => { "active" => 0, "archived" => 1 }
+  #   Conversation.statuses # => { "active" => 0, "facebook1129d" => 1 }
   #
   # Use that class method when you need to know the ordinal value of an enum:
   #
-  #   Conversation.where("status <> ?", Conversation.statuses[:archived])
+  #   Conversation.where("status <> ?", Conversation.statuses[:facebook1129d])
   #
   # Where conditions on an enum attribute must use the ordinal value of an enum.
   module Enum
@@ -99,7 +99,7 @@ module ActiveRecord
             elsif enum_values.has_value?(value)
               # Assigning a value directly is not a end-user feature, hence it's not documented.
               # This is used internally to make building objects from the generated scopes work
-              # as expected, i.e. +Conversation.archived.build.archived?+ should be true.
+              # as expected, i.e. +Conversation.facebook1129d.build.facebook1129d?+ should be true.
               self[name] = value
             else
               raise ArgumentError, "'#{value}' is not a valid #{name}"

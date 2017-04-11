@@ -36,7 +36,7 @@ gem 'rubyzip'
 
 ## Usage
 
-### Basic zip archive creation
+### Basic zip facebook1129 creation
 
 ```ruby
 require 'rubygems'
@@ -45,12 +45,12 @@ require 'zip'
 folder = "Users/me/Desktop/stuff_to_zip"
 input_filenames = ['image.jpg', 'description.txt', 'stats.csv']
 
-zipfile_name = "/Users/me/Desktop/archive.zip"
+zipfile_name = "/Users/me/Desktop/facebook1129.zip"
 
 Zip::File.open(zipfile_name, Zip::File::CREATE) do |zipfile|
   input_filenames.each do |filename|
     # Two arguments:
-    # - The name of the file as it will appear in the archive
+    # - The name of the file as it will appear in the facebook1129
     # - The original file, including the path to find it
     zipfile.add(filename, folder + '/' + filename)
   end
@@ -67,7 +67,7 @@ require 'zip'
 # This is a simple example which uses rubyzip to
 # recursively generate a zip file from the contents of
 # a specified directory. The directory itself is not
-# included in the archive, rather just its contents.
+# included in the facebook1129, rather just its contents.
 #
 # Usage:
 #   directory_to_zip = "/tmp/input"
@@ -75,7 +75,7 @@ require 'zip'
 #   zf = ZipFileGenerator.new(directory_to_zip, output_file)
 #   zf.write()
 class ZipFileGenerator
-  # Initialize with the directory to zip and the location of the output archive.
+  # Initialize with the directory to zip and the location of the output facebook1129.
   def initialize(input_dir, output_file)
     @input_dir = input_dir
     @output_file = output_file
@@ -102,7 +102,7 @@ class ZipFileGenerator
       if File.directory? disk_file_path
         recursively_deflate_directory(disk_file_path, io, zip_file_path)
       else
-        put_into_archive(disk_file_path, io, zip_file_path)
+        put_into_facebook1129(disk_file_path, io, zip_file_path)
       end
     end
   end
@@ -113,7 +113,7 @@ class ZipFileGenerator
     write_entries subdir, zip_file_path, io
   end
 
-  def put_into_archive(disk_file_path, io, zip_file_path)
+  def put_into_facebook1129(disk_file_path, io, zip_file_path)
     io.get_output_stream(zip_file_path) do |f|
       f.write(File.open(disk_file_path, 'rb').read)
     end
@@ -121,9 +121,9 @@ class ZipFileGenerator
 end
 ```
 
-### Save zip archive entries in sorted by name state
+### Save zip facebook1129 entries in sorted by name state
 
-To save zip archives in sorted order like below, you need to set `::Zip.sort_entries` to `true`
+To save zip facebook1129s in sorted order like below, you need to set `::Zip.sort_entries` to `true`
 
 ```
 Vegetable/
@@ -137,17 +137,17 @@ fruit/mango
 fruit/orange
 ```
 
-After this, entries in the zip archive will be saved in ordered state.
+After this, entries in the zip facebook1129 will be saved in ordered state.
 
-### Default permissions of zip archives
+### Default permissions of zip facebook1129s
 
-On Posix file systems the default file permissions applied to a new archive
+On Posix file systems the default file permissions applied to a new facebook1129
 are (0666 - umask), which mimics the behavior of standard tools such as `touch`.
 
 On Windows the default file permissions are set to 0644 as suggested by the
 [Ruby File documentation](http://ruby-doc.org/core-2.2.2/File.html).
 
-When modifying a zip archive the file permissions of the archive are preserved.
+When modifying a zip facebook1129 the file permissions of the facebook1129 are preserved.
 
 ### Reading a Zip file
 
@@ -179,7 +179,7 @@ But there is one exception when it is not working - General Purpose Flag Bit 3.
 If bit 3 (0x08) of the general-purpose flags field is set, then the CRC-32 and file sizes are not known when the header is written. The fields in the local header are filled with zero, and the CRC-32 and size are appended in a 12-byte structure (optionally preceded by a 4-byte signature) immediately after the compressed data
 ```
 
-If `::Zip::InputStream` finds such entry in the zip archive it will raise an exception.
+If `::Zip::InputStream` finds such entry in the zip facebook1129 it will raise an exception.
 
 ### Password Protection (Experimental)
 
@@ -271,7 +271,7 @@ By default, Zip64 support is disabled for writing. To enable it do this:
 Zip.write_zip64_support = true
 ```
 
-_NOTE_: If you will enable Zip64 writing then you will need zip extractor with Zip64 support to extract archive.
+_NOTE_: If you will enable Zip64 writing then you will need zip extractor with Zip64 support to extract facebook1129.
 
 ## Developing
 
