@@ -533,7 +533,7 @@ DEPENDENCIES
   jquery-turbolinks
   launchy
   letter_opener_web
-  libv8
+  libv8 (~> 3.16, >= 3.16.14.19)
   omniauth
   omniauth-facebook
   omniauth-twitter
