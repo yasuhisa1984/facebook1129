@@ -7,7 +7,7 @@ set :scm, "git"
 # cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/yasuhisa1984/facebook1129'
 # deployするブランチ。デフォルトはmasterなのでなくても可。
-set :branch, ENV['BRANCH'] || 'master'
+set :branch, 'master'
 
 # deploy先のディレクトリ。
 set :deploy_to, '/var/www/facebook1129'
