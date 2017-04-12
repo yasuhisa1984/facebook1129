@@ -4,7 +4,6 @@ gem 'dotenv-rails'
 gem 'unicorn'
 gem 'therubyracer', platforms: :ruby
 
-gem 'libv8', '~> 3.16', '>= 3.16.14.19'
 
 gem'annotate_models'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -93,4 +92,4 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
 gem 'carrierwave'
-gem 'rmagick'
+gem 'mini_magick'

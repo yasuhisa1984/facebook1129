@@ -13,3 +13,6 @@
 /tmp
 #dotenv-rails
 .env
+
+vendor/bundle
+vendor/cache
