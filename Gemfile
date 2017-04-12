@@ -92,4 +92,4 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
 gem 'carrierwave'
-# gem 'mini_magick'
+#gem 'rmagick', '2.16.0'
