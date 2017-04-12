@@ -3,7 +3,7 @@ lock '3.6.0'
 # デプロイするアプリケーション名
 set :application, 'facebook1129'
 
-set :scm, "git"
+#set :scm, "git"
 # cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/yasuhisa1984/facebook1129'
 # deployするブランチ。デフォルトはmasterなのでなくても可。
