@@ -93,3 +93,4 @@ gem 'omniauth-facebook'
 
 gem 'carrierwave'
 #gem 'rmagick', '2.16.0'
+gem 'remotipart'
