@@ -57,6 +57,7 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
+  gem 'pry-rails'
   # Access an IRB console on exception pages or by using <%= console %> in views
 
 
