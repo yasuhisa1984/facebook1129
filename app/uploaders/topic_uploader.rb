@@ -29,7 +29,7 @@ class TopicUploader < CarrierWave::Uploader::Base
   #   # do something
   # end
   # アップロードされたファイルを200〜200以下に変換する
-  process resize_to_limit: [400, 400]
+  #process resize_to_limit: [400, 400]
  #
  # def scale(width, height)
  #   # do something
@@ -37,9 +37,9 @@ class TopicUploader < CarrierWave::Uploader::Base
 
  # thumb バージョン(width 400px x height 200px)
 
-  version :thumb do
-    process resize_to_limit: [400, 200]
-  end
+#  version :thumb do
+#    process resize_to_limit: [400, 200]
+#  end
 
   # Create different versions of your uploaded files:
   # version :thumb do

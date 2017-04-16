@@ -86,6 +86,7 @@ gem 'cancan'
 
 gem 'activeresource'
 
+gem "mini_magick"
 
 gem 'omniauth'
 gem 'omniauth-twitter'
